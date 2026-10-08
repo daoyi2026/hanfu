@@ -1,0 +1,242 @@
+{
+  "checkedAt": "2026-10-03",
+  "sources": {
+    "nmc": {
+      "label": "中国国家博物馆 · 湖南馆藏专题",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/details.html?id=4",
+      "kind": "馆方供稿",
+      "note": "文物图与说明由湖南省博物馆提供；国博专题收录。"
+    },
+    "hanResearch": {
+      "label": "中国社会科学网 · 西汉素纱襌衣",
+      "url": "https://www.cssn.cn/skgz/bwyc/202609/t20260922_6068425.shtml",
+      "kind": "研究者供稿",
+      "note": "于思萌、刘大玮，科技考古与文化遗产保护重点实验室，2026-09-22。"
+    },
+    "bm": {
+      "label": "大英博物馆 · 女史箴图藏品档案",
+      "url": "https://www.britishmuseum.org/collection/object/A_1903-0408-0-1",
+      "kind": "馆藏档案",
+      "note": "馆藏号 1903,0408,0.1；馆方将现存本断为5—7世纪。"
+    },
+    "weiImage": {
+      "label": "女史箴图·梳妆段图像来源",
+      "url": "https://commons.wikimedia.org/wiki/File:Admonitions_Scroll_Scene_7.jpg",
+      "kind": "图像出处",
+      "note": "Wikimedia Commons，标注为公版平面画作的摄影复制；年代以馆藏档案为准。"
+    },
+    "tang": {
+      "label": "故宫博物院 · 挥扇仕女图卷",
+      "url": "https://www.dpm.org.cn/collection/paint/228711.html",
+      "kind": "馆藏档案",
+      "note": "文物号 新00147478；李湜撰稿。馆方题为“传为唐周昉绘”。"
+    },
+    "tangStudy": {
+      "label": "中国国家博物馆 · 长安水边多丽人",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33161.shtml",
+      "kind": "研究文章",
+      "note": "通过唐俑、体态与服装变化观察唐代审美，不能用盛唐样式代表整个唐代。"
+    },
+    "five": {
+      "label": "故宫博物院 · 韩熙载夜宴图卷",
+      "url": "https://www.dpm.org.cn/collection/paint/228200.html",
+      "kind": "馆藏档案",
+      "note": "文物号 新00147326；馆方判定现存本为南宋摹本。"
+    },
+    "song": {
+      "label": "中国丝绸博物馆 · 素罗背子",
+      "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1830",
+      "kind": "馆藏档案",
+      "note": "公开尺寸、织物组织、领襟形态与布纽细节。"
+    },
+    "songExhibit": {
+      "label": "中国丝绸博物馆 · 锦程基本陈列",
+      "url": "https://www.chinasilkmuseum.com/zz/info_17.aspx?itemid=26320",
+      "kind": "展览研究",
+      "note": "“素罗单衣”编号1761，南宋咸淳十年（1274），江西德安周氏墓出土。"
+    },
+    "yuan": {
+      "label": "中国丝绸博物馆 · 元代印金上衣及半臂",
+      "url": "https://www.chinasilkmuseum.com/gskt/info_319.aspx?itemid=28329",
+      "kind": "专题研究",
+      "note": "徐铮，2021-07-07。附原件、纹样、胸背图及相关研究书目。"
+    },
+    "ming": {
+      "label": "中国丝绸博物馆 · 绢短袖衫、绮长袖衫与绢裙",
+      "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1870",
+      "kind": "馆藏档案",
+      "note": "明初钱姓女子三件套；公开三件服装的尺寸、材料与组合关系。"
+    },
+    "qing": {
+      "label": "中国丝绸博物馆 · 彩绣花蝶凤尾裙",
+      "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1949",
+      "kind": "馆藏档案",
+      "note": "公开裙长、腰宽、褶裥、绣饰与凤尾形装饰细节。"
+    },
+    "jade": {
+      "label": "中国国家博物馆 · 中国古代玉器",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/202308zggdyq/",
+      "kind": "配饰参照",
+      "note": "含战国双龙首珩、夔龙形佩和西汉舞人佩；不是本页衣物的配套出土物。"
+    },
+    "overview": {
+      "label": "中国国家博物馆 · 中国古代服饰文化",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/",
+      "kind": "通史阅读",
+      "note": "衣冠制度、材料、实物与图像的综合性展览。"
+    }
+  },
+  "images": {
+    "qin": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/images/detail/4/pic4.jpg",
+    "han": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/images/detail/4/pic5.jpg",
+    "song": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229104835836.jpg",
+    "yuan": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105931305.jpg",
+    "yuan-banbi": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105938602.jpg",
+    "qing": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105944539.jpg",
+    "qing-detail": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105945970.jpg",
+    "ming": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105528867.jpg",
+    "tang": "https://img.dpm.org.cn/Uploads/Picture/2017/04/01/s58defe50db398.jpg",
+    "five": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de19af038a5.jpg",
+    "yuan-chest": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105949367.jpg",
+    "wei": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Admonitions_Scroll_Scene_7.jpg"
+  },
+  "records": [
+    {
+      "id": "qin",
+      "title": "人物龙凤帛画中的女子衣装",
+      "type": "painting",
+      "original": "assets/originals/qin.jpg",
+      "additionalImages": [],
+      "redraw": "assets/redraws/qin.png",
+      "diagram": "assets/diagrams/qin.svg",
+      "references": [
+        "nmc",
+        "jade"
+      ],
+      "limits": "古画仅见侧面。本图并列可见轮廓与未确定部位，不提供虚构的完整裁剪展开。"
+    },
+    {
+      "id": "han",
+      "title": "直裾素纱襌衣",
+      "type": "textile",
+      "original": "assets/originals/han.jpg",
+      "additionalImages": [],
+      "redraw": "assets/redraws/han.png",
+      "diagram": "assets/diagrams/han.svg",
+      "references": [
+        "nmc",
+        "hanResearch",
+        "jade"
+      ],
+      "limits": "正面平展轮廓依据实物与公开衣长、通袖长绘制；内部接缝、背面与缝份未据测绘确认，不能作为裁剪纸样。"
+    },
+    {
+      "id": "wei",
+      "title": "《女史箴图》梳妆段侍女衣装",
+      "type": "painting",
+      "original": "assets/originals/wei.jpg",
+      "additionalImages": [],
+      "redraw": "assets/redraws/wei.png?v=2.1",
+      "diagram": "assets/diagrams/wei.svg",
+      "references": [
+        "bm",
+        "weiImage"
+      ],
+      "limits": "上衣与裙的分体关系有馆方说明支持；展开宽度、领襟内层及后身没有测绘依据，以虚线表示推测轮廓。"
+    },
+    {
+      "id": "tang",
+      "title": "《挥扇仕女图》中的衣裙",
+      "type": "painting",
+      "original": "assets/originals/tang.jpg",
+      "additionalImages": [],
+      "redraw": "assets/redraws/tang.png",
+      "diagram": "assets/diagrams/tang.svg",
+      "references": [
+        "tang",
+        "tangStudy"
+      ],
+      "limits": "衣、裙、帛巾分层是解释性示意；裙头位置与轮廓参考画面，背面、袖接与裙幅未确定。"
+    },
+    {
+      "id": "five",
+      "title": "《韩熙载夜宴图》持扇女子衣装",
+      "type": "painting",
+      "original": "assets/originals/five.jpg",
+      "additionalImages": [],
+      "redraw": "assets/redraws/five.png",
+      "diagram": "assets/diagrams/five.svg",
+      "references": [
+        "five"
+      ],
+      "limits": "此图展示可见长裙、上身及红带的位置关系；不将宋摹本中的线条直接转换为五代实物裁片。"
+    },
+    {
+      "id": "song",
+      "title": "素罗单衣（褙子）",
+      "type": "textile",
+      "original": "assets/originals/song.jpg",
+      "additionalImages": [],
+      "redraw": "assets/redraws/song.png",
+      "diagram": "assets/diagrams/song.svg",
+      "references": [
+        "song",
+        "songExhibit"
+      ],
+      "limits": "衣长、通袖长、侧衩与缘边参考馆方尺寸；图示外轮廓和构件位置，未公开的缝份、内层与后身结构不作补造。"
+    },
+    {
+      "id": "yuan",
+      "title": "印金对襟上衣与半臂",
+      "type": "textile",
+      "original": "assets/originals/yuan.jpg",
+      "additionalImages": [
+        {
+          "src": "assets/originals/yuan-banbi.jpg",
+          "label": "绿色花卉纹绫印金方搭子半臂"
+        },
+        {
+          "src": "assets/originals/yuan-chest.jpg",
+          "label": "半臂上的印金胸背局部"
+        }
+      ],
+      "redraw": "assets/redraws/yuan.png",
+      "diagram": "assets/diagrams/yuan.svg",
+      "references": [
+        "yuan"
+      ],
+      "limits": "分列长袖上衣与短袖半臂，外形依据实物。整衣尺寸未公开，不由胸背尺寸反算整衣；没有推定下装。"
+    },
+    {
+      "id": "ming",
+      "title": "钱氏女子衫裙三件套",
+      "type": "textile",
+      "original": "assets/originals/ming.jpg",
+      "additionalImages": [],
+      "redraw": "assets/redraws/ming.png",
+      "diagram": "assets/diagrams/ming.svg",
+      "references": [
+        "ming"
+      ],
+      "limits": "分别展示外衫、内衫及裙的轮廓与公开尺寸。不是拆解后的原始裁片，未含缝份及隐藏接缝。"
+    },
+    {
+      "id": "qing",
+      "title": "彩绣花蝶凤尾裙",
+      "type": "textile",
+      "original": "assets/originals/qing.jpg",
+      "additionalImages": [
+        {
+          "src": "assets/originals/qing-detail.jpg",
+          "label": "凤尾裙装饰局部"
+        }
+      ],
+      "redraw": "assets/redraws/qing.png",
+      "diagram": "assets/diagrams/qing.svg",
+      "references": [
+        "qing"
+      ],
+      "limits": "展示裙门、褶区、饰条与裙腰关系；全展开布幅和每褶吃势没有测绘依据，图中的褶线为示意。"
+    }
+  ]
+}
