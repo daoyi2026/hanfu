@@ -1,5 +1,1749 @@
 {
-  "checkedAt": "2026-10-03",
+  "checkedAt": "2026-10-11",
+  "baseline": "work/publish-hanfu @ d658adb",
+  "candidate": "outputs/hanfu-expanded",
+  "visualMethod": "AI-generated pale-ink costume illustrations; one woman and one man per scene, with scene-specific poses and actions.",
+  "promptTemplate": "竖幅中国古代衣冠淡彩工笔画，绢纸底色与柔和矿物色统一；全身人物从冠发到鞋履完整入画。每幅只画一位女性和一位男性，服装、发式、佩饰及动作按该套场景描述绘制，两人的姿态要自然且各不相同，双手位置清楚，避免重复肢体。以对应时期的博物馆藏品、人物画、俑像和纺织品资料作造型参考。不要第三个人物、现代汉服混搭、文字、水印、印章或裁片平面示意。",
+  "images": {
+    "assets/originals/qin.jpg": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/images/detail/4/pic4.jpg",
+    "assets/originals/han.jpg": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/images/detail/4/pic5.jpg",
+    "assets/originals/wei.jpg": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Admonitions_Scroll_Scene_7.jpg",
+    "assets/originals/tang.jpg": "https://img.dpm.org.cn/Uploads/Picture/2017/04/01/s58defe50db398.jpg",
+    "assets/originals/five.jpg": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de19af038a5.jpg",
+    "assets/originals/song.jpg": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229104835836.jpg",
+    "assets/originals/yuan.jpg": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105931305.jpg",
+    "assets/originals/yuan-banbi.jpg": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105938602.jpg",
+    "assets/originals/yuan-chest.jpg": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105949367.jpg",
+    "assets/originals/ming.jpg": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105528867.jpg",
+    "assets/originals/qing.jpg": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105944539.jpg",
+    "assets/originals/qing-detail.jpg": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105945970.jpg"
+  },
+  "generatedArt": [
+    {
+      "period": "先秦",
+      "section": "qin",
+      "look": "ritual",
+      "title": "贵族礼仪衣冠",
+      "path": "assets/paintings/sets/qin-ritual.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子整理衣袖、男子举笏相揖，安静呈礼。",
+      "references": [
+        {
+          "id": "nmcEasternZhou",
+          "label": "中国国家博物馆 · 中国古代服饰文化展（商周至战国）",
+          "url": "https://m.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "深衣、短衣与胡服，让礼仪、劳动和骑射各有一副衣形。",
+        "female": {
+          "name": "楚地贵族女子",
+          "garmentLayers": [
+            "交领右衽长衣，宽袖垂至腕下；腰束丝带，衣缘曳地。",
+            "衣色以朱褐、赭黄和深色缘边相配，形成整片纵向衣身。"
+          ],
+          "hairstyle": "长发挽成高髻，以素色发带收拢。",
+          "accessories": [
+            [
+              "组玉佩",
+              "成组玉件悬于腰间，随步轻摇；战国玉佩可见长方珩与串联垂饰。"
+            ],
+            [
+              "香囊",
+              "小袋系于腰带侧面，作为随身盛物的衣着配件。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "周代士人深衣",
+          "garmentLayers": [
+            "上下连属的长衣，交领右衽，衣摆至踝；宽袖收在腕口。",
+            "腰间系组带，衣身线条垂直，行礼时衣襟不散。"
+          ],
+          "hairstyle": "束发戴小冠，冠以带固定，露出额前发际。",
+          "accessories": [
+            [
+              "冠",
+              "小冠束住发髻，配素色冠带；不加后世乌纱或金翅。"
+            ],
+            [
+              "革带",
+              "腰间束带用来固定衣身与随身小囊。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "先秦",
+      "section": "qin",
+      "look": "market",
+      "title": "市井买卖常服",
+      "path": "assets/paintings/sets/qin-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子铺开布匹，男子提秤称量，两人交接货物。",
+      "references": [
+        {
+          "id": "nmcEasternZhou",
+          "label": "中国国家博物馆 · 中国古代服饰文化展（商周至战国）",
+          "url": "https://m.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "深衣、短衣与胡服，让礼仪、劳动和骑射各有一副衣形。",
+        "female": {
+          "name": "织作与售布女子",
+          "garmentLayers": [
+            "窄袖上衣外束布带，下着长裙；袖口利落，方便收放布匹。",
+            "围腰布收纳线轴和小物，衣色为靛青、褐红等耐脏色。"
+          ],
+          "hairstyle": "发髻盘低，以布巾压住碎发。",
+          "accessories": [
+            [
+              "布巾",
+              "包覆头顶，吸汗并固定发丝。"
+            ],
+            [
+              "腰囊",
+              "小布袋挂在衣带侧面，盛放针线或钱币。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "市集货郎",
+          "garmentLayers": [
+            "交领短衣配合身袴，腰带收紧后便于搬物与蹲起。",
+            "外搭短护腰，衣摆不过膝，裤脚以布带束住。"
+          ],
+          "hairstyle": "束发包巾，发尾收于巾内。",
+          "accessories": [
+            [
+              "布冠巾",
+              "系带在脑后打结，日常劳作不妨碍视线。"
+            ],
+            [
+              "铜带钩",
+              "带钩固定腰带，形制可参照战国带钩文物。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "先秦",
+      "section": "qin",
+      "look": "hunt",
+      "title": "胡服骑射行装",
+      "path": "assets/paintings/sets/qin-hunt.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "男子搭弓候马，女子牵缰整鞍，动作一立一行。",
+      "references": [
+        {
+          "id": "nmcEasternZhou",
+          "label": "中国国家博物馆 · 中国古代服饰文化展（商周至战国）",
+          "url": "https://m.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "深衣、短衣与胡服，让礼仪、劳动和骑射各有一副衣形。",
+        "female": {
+          "name": "随行骑乘女子",
+          "garmentLayers": [
+            "窄袖短衣配长袴，腰带束紧；衣摆短，骑乘时不拖地。",
+            "外披短褙式护衣挡风，足穿软底靴履。"
+          ],
+          "hairstyle": "高束发髻以带固定，髻后垂一条短系带。",
+          "accessories": [
+            [
+              "革腰带",
+              "收紧衣身，挂缰绳套与小囊。"
+            ],
+            [
+              "护腕",
+              "窄袖口外束布带，减少骑行时的牵绊。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "赵地骑射男子",
+          "garmentLayers": [
+            "左衽或交领窄袖短袍配袴，腰束革带，腿部留出骑乘空间。",
+            "靴履包住踝部，袖口与裤口均用带子收紧。"
+          ],
+          "hairstyle": "束发戴皮质小冠，冠顶简洁平整。",
+          "accessories": [
+            [
+              "弓囊",
+              "弓与箭囊悬在腰侧，便于骑乘取用。"
+            ],
+            [
+              "马靴",
+              "靴筒护踝，便于踩稳马镫之前的踏具。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "秦汉",
+      "section": "han",
+      "look": "ritual",
+      "title": "士族深衣礼装",
+      "path": "assets/paintings/sets/han-ritual.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子执扇候礼，男子侧身作揖，袖与衣裾各自垂落。",
+      "references": [
+        {
+          "id": "nmcHanStudy",
+          "label": "中国国家博物馆 · 上衣下袴",
+          "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33119.shtml"
+        },
+        {
+          "id": "nmcHanFormation",
+          "label": "中国国家博物馆 · 《汉服的形成》",
+          "url": "https://www.chnmuseum.cn/yj/xscg/xszz/202408/t20240815_269916.shtml"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "曲裾、直裾和袴褶，呈现汉代深衣与日常衣装的不同穿法。",
+        "female": {
+          "name": "西汉贵族女子",
+          "garmentLayers": [
+            "交领右衽曲裾深衣，衣襟绕身至侧后，形成层层斜向衣缘。",
+            "宽袖长衣内搭素色中衣，腰束织带，衣摆掩住鞋面。"
+          ],
+          "hairstyle": "发髻高挽，外覆巾帼或帛带，侧簪一枚细长簪。",
+          "accessories": [
+            [
+              "玉组佩",
+              "腰间佩玉随衣摆轻晃，礼仪场合强调行步从容。"
+            ],
+            [
+              "帛扇",
+              "手持团扇遮面或纳凉，扇柄简洁，不做戏曲式夸张。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "西汉士人曲裾深衣",
+          "garmentLayers": [
+            "交领深衣裾绕身体下摆，衣身宽松，袖口收束。",
+            "外束革带，腰间悬佩绶与小囊；足穿深色舄履。"
+          ],
+          "hairstyle": "发髻置入小冠，冠带从颌下系结。",
+          "accessories": [
+            [
+              "小冠",
+              "冠顶低平，发髻纳冠内，适用于士人常见首服。"
+            ],
+            [
+              "革带与佩绶",
+              "革带束住深衣，佩绶垂于腰侧，成为礼服轮廓的一部分。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "秦汉",
+      "section": "han",
+      "look": "market",
+      "title": "市肆买卖便装",
+      "path": "assets/paintings/sets/han-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子递出一篮货物，男子低头清点，姿态贴近日常。",
+      "references": [
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcHanFormation",
+          "label": "中国国家博物馆 · 《汉服的形成》",
+          "url": "https://www.chnmuseum.cn/yj/xscg/xszz/202408/t20240815_269916.shtml"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "曲裾、直裾和袴褶，呈现汉代深衣与日常衣装的不同穿法。",
+        "female": {
+          "name": "市肆经营女子",
+          "garmentLayers": [
+            "短襦交领右衽，袖口略窄；下着长裙，腰间围短布帛。",
+            "外衫衣缘用深色滚边，方便每日劳作与清洗。"
+          ],
+          "hairstyle": "发髻挽于脑后，系软巾固定。",
+          "accessories": [
+            [
+              "布巾",
+              "包住发髻，遮尘并收拢鬓发。"
+            ],
+            [
+              "腰包",
+              "系于裙腰，收纳钱串和小物。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "市肆货郎",
+          "garmentLayers": [
+            "短襦配合裆袴，衣长及膝，袖口以布带收窄。",
+            "腰束宽带，裤脚束入软履，便于步行和搬挑。"
+          ],
+          "hairstyle": "头戴软帻，发髻收在巾内。",
+          "accessories": [
+            [
+              "帻巾",
+              "软巾包髻，便于长期行走。"
+            ],
+            [
+              "绳结与钱囊",
+              "腰带系小囊，钱串垂在身侧，日常取用方便。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "秦汉",
+      "section": "han",
+      "look": "travel",
+      "title": "驿路骑乘行装",
+      "path": "assets/paintings/sets/han-travel.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "男子骑马回望，女子牵马缓步，衣袖与披风被风带起。",
+      "references": [
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcHanStudy",
+          "label": "中国国家博物馆 · 上衣下袴",
+          "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33119.shtml"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "曲裾、直裾和袴褶，呈现汉代深衣与日常衣装的不同穿法。",
+        "female": {
+          "name": "驿路随行女子",
+          "garmentLayers": [
+            "窄袖长衫配袴，外披短斗篷，腰带在骑行时收紧。",
+            "裤脚束入软靴，衣摆留出迈步和上马的空间。"
+          ],
+          "hairstyle": "双髻以发带固定，额侧留两缕短发。",
+          "accessories": [
+            [
+              "帷帽",
+              "轻纱帽沿遮尘，兼顾长途行路。"
+            ],
+            [
+              "革带",
+              "将短囊和水具固定在腰侧。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "长途行旅男子",
+          "garmentLayers": [
+            "直裾短袍配袴，袖身窄而不贴身，腰间束革带。",
+            "外披御风褐衣，足蹬软靴，便于上下马。"
+          ],
+          "hairstyle": "束发戴黑色帻巾，帽缘贴合头部。",
+          "accessories": [
+            [
+              "行囊",
+              "小囊系于腰后，轻装赶路。"
+            ],
+            [
+              "马鞭",
+              "手持短鞭控马，属于出行器具。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "魏晋南北朝",
+      "section": "wei",
+      "look": "gentry",
+      "title": "士族家宴衣冠",
+      "path": "assets/paintings/sets/wei-gentry.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子回身理袖，男子倚案展卷，动作舒展而克制。",
+      "references": [
+        {
+          "id": "bm",
+          "label": "大英博物馆 · 女史箴图藏品档案",
+          "url": "https://www.britishmuseum.org/collection/object/A_1903-0408-0-1"
+        },
+        {
+          "id": "weiImage",
+          "label": "女史箴图·梳妆段图像来源",
+          "url": "https://commons.wikimedia.org/wiki/File:Admonitions_Scroll_Scene_7.jpg"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "宽衣博带的士人风度、袴褶的行动便利与北朝衣冠交流。",
+        "female": {
+          "name": "世家女子襦裙",
+          "garmentLayers": [
+            "短襦交领，外披宽袖长衫；下着高腰长裙，裙带系于胸下。",
+            "衣袖轻垂，外衫衣缘以浅色镶边，形成纵向层次。"
+          ],
+          "hairstyle": "高髻后垂长带，鬓侧插梳形发饰。",
+          "accessories": [
+            [
+              "长带",
+              "从髻后垂至肩背，随转身形成飘带线条。"
+            ],
+            [
+              "梳饰",
+              "木梳插入髻侧，兼具固定发式与装饰作用。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "魏晋文士大袖袍",
+          "garmentLayers": [
+            "交领宽袖长袍，衣身不束紧，袖口随手臂摆动。",
+            "外系博带，带端垂至膝下；足着低帮布履。"
+          ],
+          "hairstyle": "长发束起，以幅巾包覆发髻。",
+          "accessories": [
+            [
+              "幅巾",
+              "软巾围住发髻并在脑后系结。"
+            ],
+            [
+              "博带",
+              "宽幅衣带松松束腰，垂带是魏晋人物画常见线条。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "魏晋南北朝",
+      "section": "wei",
+      "look": "market",
+      "title": "坊市日用短衣",
+      "path": "assets/paintings/sets/wei-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子递过陶罐，男子接罐后转身放入背篓。",
+      "references": [
+        {
+          "id": "nmcWei",
+          "label": "中国国家博物馆 · 侍从陶俑（北魏）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211111_252106.shtml"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "宽衣博带的士人风度、袴褶的行动便利与北朝衣冠交流。",
+        "female": {
+          "name": "坊市劳作女子",
+          "garmentLayers": [
+            "窄袖短襦配长裙，外围短围腰；衣身收束，便于端物。",
+            "裙摆以布带提起一角，露出软履。"
+          ],
+          "hairstyle": "双环髻以布带系住，碎发用小巾压平。",
+          "accessories": [
+            [
+              "布巾",
+              "轻覆发髻，方便劳作时收发。"
+            ],
+            [
+              "围腰",
+              "短围布保护裙面，系带在腰后打结。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "北朝市井男子",
+          "garmentLayers": [
+            "交领短衣配宽袴，衣长过膝，裤口宽而能束。",
+            "腰束革带，肩背布囊，足穿便于走动的布靴。"
+          ],
+          "hairstyle": "发髻戴束发小冠，外覆软帻。",
+          "accessories": [
+            [
+              "束发小冠",
+              "北魏侍从俑所见首服，发束入冠。"
+            ],
+            [
+              "革带与布囊",
+              "带子固定衣身并悬挂工具和随身物。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "魏晋南北朝",
+      "section": "wei",
+      "look": "outing",
+      "title": "北朝郊行袴褶",
+      "path": "assets/paintings/sets/wei-outing.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子跨步扶鞍，男子牵马回身，动作一高一低。",
+      "references": [
+        {
+          "id": "nmcWei",
+          "label": "中国国家博物馆 · 侍从陶俑（北魏）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211111_252106.shtml"
+        },
+        {
+          "id": "nmcHanStudy",
+          "label": "中国国家博物馆 · 上衣下袴",
+          "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33119.shtml"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "宽衣博带的士人风度、袴褶的行动便利与北朝衣冠交流。",
+        "female": {
+          "name": "北朝女子袴褶",
+          "garmentLayers": [
+            "短衣配宽袴，袖口收紧，腰带系在外衣之上。",
+            "外披窄幅风衣，裙带收在腰后，行走不拖地。"
+          ],
+          "hairstyle": "双髻以两条系带固定，耳侧插一枚小梳。",
+          "accessories": [
+            [
+              "窄袖套",
+              "布套缚在袖口，免得牵马时袖缘滑落。"
+            ],
+            [
+              "系带",
+              "发髻上的长带与腰带分开，避免混作同一装束。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "北魏侍从袴褶",
+          "garmentLayers": [
+            "长及膝的袴褶衫配宽裤，裤腿可在膝部束扎。",
+            "交领衣襟与革带形成便于活动的上衣下袴。"
+          ],
+          "hairstyle": "束发戴小冠，冠带紧贴头部。",
+          "accessories": [
+            [
+              "小冠",
+              "国博北魏侍从俑所见束发首服。"
+            ],
+            [
+              "马靴",
+              "靴筒包住裤脚与脚踝，适合骑乘。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "隋唐",
+      "section": "tang",
+      "look": "court",
+      "title": "宫廷家礼衣冠",
+      "path": "assets/paintings/sets/tang-court.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子执扇侧立，男子持笏前行，两人衣袖形态不同。",
+      "references": [
+        {
+          "id": "tang",
+          "label": "故宫博物院 · 挥扇仕女图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228711.html"
+        },
+        {
+          "id": "nmcTangMan",
+          "label": "中国国家博物馆 · 陶男俑（唐）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252268.shtml"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "襦裙、圆领袍与骑猎胡服，展现唐代衣冠的多种场合。",
+        "female": {
+          "name": "宫廷仕女襦裙",
+          "garmentLayers": [
+            "短襦外搭半臂，下着高腰长裙，裙带上提至胸下。",
+            "披帛从肩臂绕行，裙缘长及地面，色彩以绯红、石绿相配。"
+          ],
+          "hairstyle": "高髻层叠，髻侧簪花或金钿，耳边留出短鬓。",
+          "accessories": [
+            [
+              "披帛",
+              "轻薄长巾绕臂而下，随步幅飘动。"
+            ],
+            [
+              "金钿与簪花",
+              "簪花插在高髻一侧，金钿点缀额际或鬓边。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "唐代官员圆领袍",
+          "garmentLayers": [
+            "圆领窄袖袍身及踝，腰间束革带，袍下露出长靴。",
+            "外衣开衩利于迈步，衣色和腰带等级随身份而异。"
+          ],
+          "hairstyle": "头发纳入幞头，帽脚贴于两侧或向后舒展。",
+          "accessories": [
+            [
+              "幞头",
+              "软质头巾包发，帽脚为唐代男子常见轮廓。"
+            ],
+            [
+              "革带与靴",
+              "革带束腰，靴筒收住裤脚，适合步行与骑乘。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "隋唐",
+      "section": "tang",
+      "look": "market",
+      "title": "坊市交易衣着",
+      "path": "assets/paintings/sets/tang-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子挑选香料，男子抬手指向摊架，两人交谈。",
+      "references": [
+        {
+          "id": "nmcTangCrossdress",
+          "label": "中国国家博物馆 · 男装女陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252274.shtml"
+        },
+        {
+          "id": "nmcTangMan",
+          "label": "中国国家博物馆 · 陶男俑（唐）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252268.shtml"
+        },
+        {
+          "id": "tang",
+          "label": "故宫博物院 · 挥扇仕女图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228711.html"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "襦裙、圆领袍与骑猎胡服，展现唐代衣冠的多种场合。",
+        "female": {
+          "name": "坊市女商人胡服",
+          "garmentLayers": [
+            "翻领窄袖短袍配长裤，衣身束在腰带内，外搭半臂。",
+            "裤脚收进软靴，便于穿行和搬动摊货。"
+          ],
+          "hairstyle": "双股高髻，髻顶插一梳，耳侧留短鬓。",
+          "accessories": [
+            [
+              "半臂",
+              "无袖短衣罩在窄袖袍外，突出肩背层次。"
+            ],
+            [
+              "小梳与耳饰",
+              "梳篦固定发髻，耳饰贴近耳垂，不作夸张长坠。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "唐代坊市行商",
+          "garmentLayers": [
+            "圆领窄袖袍配长裤，腰束宽带，衣摆开衩便于行走。",
+            "肩披货布，袖口利落，靴履适合长时间站立。"
+          ],
+          "hairstyle": "幞头包发，额前收紧，帽顶低平。",
+          "accessories": [
+            [
+              "布货担",
+              "轻布担或小包裹系于肩侧，作为行商随身物。"
+            ],
+            [
+              "腰带",
+              "宽腰带固定衣襟，绳结收在侧后。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "隋唐",
+      "section": "tang",
+      "look": "hunt",
+      "title": "骑猎胡服行装",
+      "path": "assets/paintings/sets/tang-hunt.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子回身拉缰，男子弯臂持弓，骏马向前踏步。",
+      "references": [
+        {
+          "id": "nmcTangRide",
+          "label": "中国国家博物馆 · 彩绘骑马女陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202104/t20210414_249707.shtml"
+        },
+        {
+          "id": "nmcTangCrossdress",
+          "label": "中国国家博物馆 · 男装女陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252274.shtml"
+        },
+        {
+          "id": "nmcTangMan",
+          "label": "中国国家博物馆 · 陶男俑（唐）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252268.shtml"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "襦裙、圆领袍与骑猎胡服，展现唐代衣冠的多种场合。",
+        "female": {
+          "name": "唐代骑马女子",
+          "garmentLayers": [
+            "圆领紧袖长衣配紧腿裤，腰束革带，裤脚收进尖头履。",
+            "短披风压住肩背，衣摆便于跨坐鞍上。"
+          ],
+          "hairstyle": "双螺髻或双髻收于耳上，髻后插一枚细簪。",
+          "accessories": [
+            [
+              "革带与铃饰",
+              "马具以革带和小铃装饰；衣身腰带固定骑乘衣装。"
+            ],
+            [
+              "骑靴",
+              "靴履包脚踝，骑乘时不易脱落。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "唐代猎骑男子",
+          "garmentLayers": [
+            "窄袖胡服配袴，衣襟翻领，腰束革带，外披短风衣。",
+            "长靴收束裤脚，手臂穿护腕，适于持弓控缰。"
+          ],
+          "hairstyle": "幞头包发，外加贴头软帽。",
+          "accessories": [
+            [
+              "弓与箭囊",
+              "弓囊悬腰侧，箭袋背负肩后。"
+            ],
+            [
+              "护腕",
+              "皮质护腕护住前臂，拉弓时避免擦伤。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "五代十国",
+      "section": "five",
+      "look": "banquet",
+      "title": "文士家宴衣冠",
+      "path": "assets/paintings/sets/five-banquet.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子回首举杯，男子抬手相邀，案席留在画面一侧。",
+      "references": [
+        {
+          "id": "five",
+          "label": "故宫博物院 · 韩熙载夜宴图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228200.html"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "家宴、乐坊与旅途场景里的衣袖、长裙和软冠。",
+        "female": {
+          "name": "家宴女子襦裙",
+          "garmentLayers": [
+            "长襦外罩对襟长衫，下配曳地裙；腰束带并垂一条长帛。",
+            "袖口宽而轻，衣缘以绛色收边，便于席间举袖行礼。"
+          ],
+          "hairstyle": "高髻盘于头顶，髻侧以小梳和簪花固定。",
+          "accessories": [
+            [
+              "长柄团扇",
+              "手持团扇纳凉或遮面，宴席中可作为礼仪动作。"
+            ],
+            [
+              "长帛",
+              "由肩侧垂至腰下，随着举手动作形成弧线。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "南唐文士袍服",
+          "garmentLayers": [
+            "宽袖圆领或交领长袍，衣长及踝，内搭浅色中衣。",
+            "腰束软带，外罩薄褙衣，坐立之间衣摆自然铺展。"
+          ],
+          "hairstyle": "软幞头包髻，帽脚垂在脑后。",
+          "accessories": [
+            [
+              "幞头",
+              "软巾包发，边缘贴合头顶。"
+            ],
+            [
+              "玉带与佩囊",
+              "腰带系小佩囊，简洁呈现文士席间的衣着层次。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "五代十国",
+      "section": "five",
+      "look": "market",
+      "title": "五代坊市买卖衣着",
+      "path": "assets/paintings/sets/five-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子铺开布帛招呼客人，男子提秤称布，两人隔着货案交谈。",
+      "references": [
+        {
+          "id": "five",
+          "label": "故宫博物院 · 韩熙载夜宴图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228200.html"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "家宴、乐坊与旅途场景里的衣袖、长裙和软冠。",
+        "female": {
+          "name": "五代市井女商贩",
+          "garmentLayers": [
+            "窄袖短襦配长裙，外系围腰；衣袖收在腕口，便于展开布料和收取钱物。",
+            "裙腰以布带束紧，外衫衣缘用深色窄边收口。"
+          ],
+          "hairstyle": "发髻盘在脑后，以软巾收拢碎发。",
+          "accessories": [
+            [
+              "围腰与钱袋",
+              "围腰护住裙面，钱袋系在腰侧，方便收纳零钱。"
+            ],
+            [
+              "发巾",
+              "包住发髻并吸汗，结头收在后脑。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "五代市集行商",
+          "garmentLayers": [
+            "交领短褐配长裤，袖口束带，外罩短褂；衣长利于站立、搬运与俯身。",
+            "布带收紧腰身，裤脚束入软靴，身侧系小囊。"
+          ],
+          "hairstyle": "发髻包入方巾，巾角在脑后打结。",
+          "accessories": [
+            [
+              "方巾",
+              "包发挡尘，结头不妨碍低头称货。"
+            ],
+            [
+              "木杆秤与货布",
+              "秤用于称量，货布成卷置于摊案，不作为衣饰。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "五代十国",
+      "section": "five",
+      "look": "hunt",
+      "title": "骑猎行装",
+      "path": "assets/paintings/sets/five-hunt.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子策马缓行回望，男子侧身举弓，衣带与披风随动作扬起。",
+      "references": [
+        {
+          "id": "five",
+          "label": "故宫博物院 · 韩熙载夜宴图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228200.html"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "家宴、乐坊与旅途场景里的衣袖、长裙和软冠。",
+        "female": {
+          "name": "五代骑乘女子",
+          "garmentLayers": [
+            "窄袖短襦配长裙，裙侧提起并系在腰带上，内着长裤便于跨骑。",
+            "外披短风衣，袖口利落，软靴包住脚踝。"
+          ],
+          "hairstyle": "发髻以头巾包住，颈后垂两条系带。",
+          "accessories": [
+            [
+              "帷帽",
+              "帽纱遮风尘，帽沿不挡视线。"
+            ],
+            [
+              "马靴与革带",
+              "革带束衣并固定小囊，软靴便于踩镫。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "五代骑射男子",
+          "garmentLayers": [
+            "窄袖圆领袍配袴，腰束革带，外披短风衣；袖口与裤脚束紧。",
+            "长靴包住小腿，便于骑乘与落地行走。"
+          ],
+          "hairstyle": "束发戴软巾，帽带贴合头部。",
+          "accessories": [
+            [
+              "弓与箭囊",
+              "弓在手、箭囊系于腰侧，作为骑射装备。"
+            ],
+            [
+              "革护腕",
+              "护住拉弓一侧前臂，避免弦擦伤皮肤。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "两宋",
+      "section": "song",
+      "look": "gentry",
+      "title": "士大夫家庭常服",
+      "path": "assets/paintings/sets/song-gentry.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子替男子整理衣襟，男子执卷回身，神态从容。",
+      "references": [
+        {
+          "id": "song",
+          "label": "中国丝绸博物馆 · 素罗背子",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1830"
+        },
+        {
+          "id": "songExhibit",
+          "label": "中国丝绸博物馆 · 锦程基本陈列",
+          "url": "https://www.chinasilkmuseum.com/zz/info_17.aspx?itemid=26320"
+        },
+        {
+          "id": "silkHuangSheng",
+          "label": "中国丝绸博物馆 · 南宋黄昇墓罗印金单衣",
+          "url": "https://www.chinasilkmuseum.com/gskt/info_319.aspx?itemid=31584"
+        },
+        {
+          "id": "nmcSong",
+          "label": "中国国家博物馆 · 十二生肖陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252286.shtml"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "褙子、素罗单衣与市井行业衣着，呈现宋人的日常层次。",
+        "female": {
+          "name": "士家女子褙子裙装",
+          "garmentLayers": [
+            "直领对襟褙子罩在窄袖衫外，下着长裙；两侧开衩方便迈步。",
+            "褙子沿领、襟和袖口镶边，胸前以布纽或系带固定。"
+          ],
+          "hairstyle": "发髻低盘，髻侧插木梳与细簪，额边留短鬓。",
+          "accessories": [
+            [
+              "木梳",
+              "梳背露在发髻一侧，既固定发髻也便于随身使用。"
+            ],
+            [
+              "银簪",
+              "细簪横插髻中，装饰简素。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "宋代文士直身袍",
+          "garmentLayers": [
+            "宽袖直身长袍，内穿交领中衣，腰间系软带。",
+            "衣摆齐踝，袍身留量适合坐席读书与日常往来。"
+          ],
+          "hairstyle": "发髻置于幞头或软巾内，帽脚向两侧展开。",
+          "accessories": [
+            [
+              "幞头",
+              "软巾包髻，帽脚横展，是宋代男子常见首服。"
+            ],
+            [
+              "玉佩",
+              "腰带旁悬小玉佩，随步移动，装饰克制。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "两宋",
+      "section": "song",
+      "look": "market",
+      "title": "汴京市井商贩",
+      "path": "assets/paintings/sets/song-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子给顾客递出包裹，男子俯身招呼行人，背景点出摊架。",
+      "references": [
+        {
+          "id": "songQingming",
+          "label": "故宫博物院 · 张择端《清明上河图》卷新探",
+          "url": "https://www.dpm.org.cn/journal/247214.html?_list=1"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "褙子、素罗单衣与市井行业衣着，呈现宋人的日常层次。",
+        "female": {
+          "name": "市肆女商贩",
+          "garmentLayers": [
+            "窄袖短袄配长裙，外围围腰，衣袖在腕口收窄。",
+            "围腰系在裙外，裙摆提起一角，方便搬运货物。"
+          ],
+          "hairstyle": "圆髻收于头巾内，额前以巾带系住。",
+          "accessories": [
+            [
+              "头巾",
+              "布巾裹髻，抵挡风尘。"
+            ],
+            [
+              "围腰与钱袋",
+              "围腰保护裙面，钱袋系在侧腰便于取用。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "汴京行商",
+          "garmentLayers": [
+            "短褐交领短衣配长裤，腰带系紧，衣长适合行走和搬担。",
+            "外披褐色罩衣，袖口束带，足着软靴。"
+          ],
+          "hairstyle": "裹头巾或方巾，巾角系在脑后。",
+          "accessories": [
+            [
+              "包头巾",
+              "巾布包发，便于劳作时吸汗。"
+            ],
+            [
+              "挑担",
+              "货担压在肩上，肩布垫在衣外，表现行商装束。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "两宋",
+      "section": "song",
+      "look": "outing",
+      "title": "踏青出行衣装",
+      "path": "assets/paintings/sets/song-outing.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子抬手遮日，男子牵驴回望，衣摆随行走轻拂。",
+      "references": [
+        {
+          "id": "songQingming",
+          "label": "故宫博物院 · 张择端《清明上河图》卷新探",
+          "url": "https://www.dpm.org.cn/journal/247214.html?_list=1"
+        },
+        {
+          "id": "nmcSong",
+          "label": "中国国家博物馆 · 十二生肖陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252286.shtml"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "褙子、素罗单衣与市井行业衣着，呈现宋人的日常层次。",
+        "female": {
+          "name": "郊游女子轻衫",
+          "garmentLayers": [
+            "淡色窄袖衫外罩薄罗褙子，下着长裙，腰间系帛带。",
+            "衣料轻薄，领襟缘边以浅褐或茶色收口。"
+          ],
+          "hairstyle": "低髻插梳，髻后用发带缠绕固定。",
+          "accessories": [
+            [
+              "竹骨扇",
+              "手持折扇遮阳，扇面保持素雅。"
+            ],
+            [
+              "香囊",
+              "小香囊系在裙腰，随步摆动。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "郊游文士",
+          "garmentLayers": [
+            "直身宽袍内搭窄袖中衣，腰系细带，外披短褙衣。",
+            "袍摆与软靴适合步行，长途乘驴时可提起衣角。"
+          ],
+          "hairstyle": "幞头或软巾包髻，帽脚收短，便于出行。",
+          "accessories": [
+            [
+              "风巾",
+              "薄巾搭在肩上，遇风时可覆头。"
+            ],
+            [
+              "驴缰",
+              "手持缰绳牵驴，作为郊行场景中的随行器具。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "辽金元",
+      "section": "yuan",
+      "look": "court",
+      "title": "元代贵族衣冠",
+      "path": "assets/paintings/sets/yuan-court.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子持扇静立，男子扶带侧身，姿态沉稳而各异。",
+      "references": [
+        {
+          "id": "silkYuanHuarong",
+          "label": "中国丝绸博物馆 · 雅韵湘传：湖南省博物馆藏宋元服饰展",
+          "url": "https://www.chinasilkmuseum.com/yz/info_18.aspx?itemid=27796"
+        },
+        {
+          "id": "silkYuanRobe",
+          "label": "中国丝绸博物馆 · 元代装饰编织腰带袍",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_103_itemid_25812.html"
+        },
+        {
+          "id": "nmcYuan",
+          "label": "中国国家博物馆 · 元世祖画像",
+          "url": "https://www.chnmuseum.cn/zp/zpml/csp/202208/t20220817_257047.shtml"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "元代袍服、短衣裙装与骑射衣着，兼看草原与城市的穿衣方式。",
+        "female": {
+          "name": "元墓贵族女子",
+          "garmentLayers": [
+            "交领短衫外搭半臂，长裙覆至鞋面，衣襟有织金与暗花装饰。",
+            "腰带束在裙外，外层衣缘和胸前装饰形成醒目色块。"
+          ],
+          "hairstyle": "发髻盘高，以金银簪钗固定，鬓侧留短发。",
+          "accessories": [
+            [
+              "金银簪钗",
+              "多枚簪钗横插髻侧，装饰与固定并用。"
+            ],
+            [
+              "耳饰",
+              "耳坠贴近颈侧，随步轻摆。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "蒙古贵族质孙袍",
+          "garmentLayers": [
+            "圆领窄袖长袍，腰束织带；衣料用金色纹样突出礼仪场合。",
+            "袍内配长裤与高靿靴，衣摆在腰带处收束。"
+          ],
+          "hairstyle": "头戴暖帽，帽顶圆钝，发辫顺颈后收拢。",
+          "accessories": [
+            [
+              "暖帽",
+              "以毡或织物制成，护头保暖。"
+            ],
+            [
+              "织带与佩囊",
+              "织带系束袍服，腰间小囊便于收纳。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "辽金元",
+      "section": "yuan",
+      "look": "market",
+      "title": "元代市井常服",
+      "path": "assets/paintings/sets/yuan-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子查看布料，男子俯身系紧货包，动作一站一蹲。",
+      "references": [
+        {
+          "id": "silkYuanHuarong",
+          "label": "中国丝绸博物馆 · 雅韵湘传：湖南省博物馆藏宋元服饰展",
+          "url": "https://www.chinasilkmuseum.com/yz/info_18.aspx?itemid=27796"
+        },
+        {
+          "id": "silkYuanRobe",
+          "label": "中国丝绸博物馆 · 元代装饰编织腰带袍",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_103_itemid_25812.html"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "元代袍服、短衣裙装与骑射衣着，兼看草原与城市的穿衣方式。",
+        "female": {
+          "name": "元代市井女子短衣裙装",
+          "garmentLayers": [
+            "直领短衫配长裙，内着衬裤；袖身收窄，便于市集往来。",
+            "腰系布带，外搭短半臂，裙片在步行时自然分开。"
+          ],
+          "hairstyle": "发髻盘于头顶，插银簪或木梳，发带收在髻后。",
+          "accessories": [
+            [
+              "银簪与梳",
+              "簪横插髻中，梳篦露出齿背。"
+            ],
+            [
+              "布腰带",
+              "收束短衫与裙腰，端头打结垂落。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "元代市肆长袍男子",
+          "garmentLayers": [
+            "交领长袍袖口收窄，腰系编织带，下配长裤与软靴。",
+            "外披短罩衣，衣摆开衩，挑货和行走都方便。"
+          ],
+          "hairstyle": "发束入软帽，帽缘贴额，后部系带。",
+          "accessories": [
+            [
+              "编织腰带",
+              "织带宽而结实，用于束袍与系挂工具。"
+            ],
+            [
+              "布包",
+              "小包系在腰侧，装随身货物。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "辽金元",
+      "section": "yuan",
+      "look": "hunt",
+      "title": "草原骑射衣装",
+      "path": "assets/paintings/sets/yuan-hunt.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子骑马张望，男子侧身拉弓，马首朝向画外。",
+      "references": [
+        {
+          "id": "silkYuanRobe",
+          "label": "中国丝绸博物馆 · 元代装饰编织腰带袍",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_103_itemid_25812.html"
+        },
+        {
+          "id": "nmcYuan",
+          "label": "中国国家博物馆 · 元世祖画像",
+          "url": "https://www.chnmuseum.cn/zp/zpml/csp/202208/t20220817_257047.shtml"
+        },
+        {
+          "id": "silkYuanHuarong",
+          "label": "中国丝绸博物馆 · 雅韵湘传：湖南省博物馆藏宋元服饰展",
+          "url": "https://www.chinasilkmuseum.com/yz/info_18.aspx?itemid=27796"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "元代袍服、短衣裙装与骑射衣着，兼看草原与城市的穿衣方式。",
+        "female": {
+          "name": "草原骑乘女子",
+          "garmentLayers": [
+            "窄袖长袍配裤装，腰束宽带，外披短风衣。",
+            "长靴包住小腿，衣摆收在腰带后便于跨骑。"
+          ],
+          "hairstyle": "发辫收在暖帽或头巾内，帽带系于颌下。",
+          "accessories": [
+            [
+              "暖帽",
+              "贴头戴用，帽缘挡风。"
+            ],
+            [
+              "马靴",
+              "靴底厚实，便于踩镫与长途骑行。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "元代骑射男子",
+          "garmentLayers": [
+            "窄袖袍配袴，外束编织腰带；袖口与裤口收紧。",
+            "长靴和短披风兼顾骑行与户外保暖。"
+          ],
+          "hairstyle": "戴圆顶暖帽，发辫垂在颈后。",
+          "accessories": [
+            [
+              "弓箭囊",
+              "背负箭囊，弓握在手中，腰带固定箭袋。"
+            ],
+            [
+              "护腕",
+              "皮质护腕套在前臂，适于拉弓。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "明",
+      "section": "ming",
+      "look": "official",
+      "title": "官宦家礼服",
+      "path": "assets/paintings/sets/ming-official.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子执帕转身，男子持笏趋前，衣冠端整。",
+      "references": [
+        {
+          "id": "ming",
+          "label": "中国丝绸博物馆 · 绢短袖衫、绮长袖衫与绢裙",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1870"
+        },
+        {
+          "id": "nmcMingQingPortraits",
+          "label": "中国国家博物馆 · 明清肖像画专题",
+          "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "补服、衫裙与士人便装，从品级衣冠读到出门常服。",
+        "female": {
+          "name": "明代命妇礼服",
+          "garmentLayers": [
+            "长袄配霞帔与长裙，领口、袖缘装饰绣纹，裙幅平整垂落。",
+            "腰间系帛带，肩披霞帔，形成清晰的前后层次。"
+          ],
+          "hairstyle": "䯼髻外罩发网，簪钗与金属饰件沿髻周排列。",
+          "accessories": [
+            [
+              "霞帔坠子",
+              "垂在胸前的帔坠稳定肩帛并作礼服装饰。"
+            ],
+            [
+              "䯼髻簪钗",
+              "发网包髻，簪钗沿髻缘插置。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "明代官员补服",
+          "garmentLayers": [
+            "圆领袍胸背缀补子，宽袖内露白色中衣袖口。",
+            "外束革带，袍下着皂靴；袍色和补子随官阶而异。"
+          ],
+          "hairstyle": "乌纱帽包住发髻，帽翅向两侧平展。",
+          "accessories": [
+            [
+              "乌纱帽",
+              "帽翅平展，网巾收束发髻。"
+            ],
+            [
+              "革带与补子",
+              "革带束袍，补子位于胸背，是官阶标识。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "明",
+      "section": "ming",
+      "look": "market",
+      "title": "市井行商衣着",
+      "path": "assets/paintings/sets/ming-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子把货物交给顾客，男子挑担穿行，动作前后错开。",
+      "references": [
+        {
+          "id": "nmcMingQingPortraits",
+          "label": "中国国家博物馆 · 明清肖像画专题",
+          "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "补服、衫裙与士人便装，从品级衣冠读到出门常服。",
+        "female": {
+          "name": "市井女子短袄裙装",
+          "garmentLayers": [
+            "短袄交领右衽，外加围腰，下配长裙；衣袖收在腕口。",
+            "衣缘采用小面积绣边，裙摆提起一角便于走动。"
+          ],
+          "hairstyle": "圆髻收于头巾，鬓边插一枚短簪。",
+          "accessories": [
+            [
+              "头巾",
+              "布巾包髻，抵挡市集风尘。"
+            ],
+            [
+              "围腰",
+              "罩在裙外，保护衣裙并收纳小物。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "市井商贩直身",
+          "garmentLayers": [
+            "交领短直身配长裤，腰系布带，外罩短褂。",
+            "衣摆齐膝，软巾和便鞋适合长时间行走。"
+          ],
+          "hairstyle": "方巾束发，巾角在脑后结住。",
+          "accessories": [
+            [
+              "方巾",
+              "包发防尘，巾带收在脑后。"
+            ],
+            [
+              "钱袋",
+              "小袋挂在腰带内侧，取用方便。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "明",
+      "section": "ming",
+      "look": "outing",
+      "title": "士人郊行衣装",
+      "path": "assets/paintings/sets/ming-outing.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子执杖跨过浅溪，男子牵马回身相候，步态不一。",
+      "references": [
+        {
+          "id": "nmcMingQingPortraits",
+          "label": "中国国家博物馆 · 明清肖像画专题",
+          "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html"
+        },
+        {
+          "id": "ming",
+          "label": "中国丝绸博物馆 · 绢短袖衫、绮长袖衫与绢裙",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1870"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "补服、衫裙与士人便装，从品级衣冠读到出门常服。",
+        "female": {
+          "name": "郊游女子披风裙装",
+          "garmentLayers": [
+            "窄袖衫外搭披风，下着长裙；腰带在外层束结。",
+            "裙摆以提带收起一角，露出软底鞋，便于踏行。"
+          ],
+          "hairstyle": "发髻盘高，插一支细簪，头巾轻覆髻顶。",
+          "accessories": [
+            [
+              "披风",
+              "短披风覆盖肩背，可在郊外挡风。"
+            ],
+            [
+              "竹杖",
+              "手持竹杖探路，兼作登坡支撑。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "明代士人道袍",
+          "garmentLayers": [
+            "宽身直裰或道袍，领口交叠，腰束软带，衣摆垂至踝。",
+            "外披短氅，布靴适合步行；袖口宽而便于抬手。"
+          ],
+          "hairstyle": "网巾束发，外戴软脚幞头或幅巾。",
+          "accessories": [
+            [
+              "网巾与幅巾",
+              "网巾束发，幅巾覆在其外。"
+            ],
+            [
+              "折扇",
+              "插在腰带或手持，作为士人出行常见随身物。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "清",
+      "section": "qing",
+      "look": "court",
+      "title": "清宫礼服",
+      "path": "assets/paintings/sets/qing-court.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子转身整理朝褂，男子垂手立于一侧，冠服层次分明。",
+      "references": [
+        {
+          "id": "dpmQingQueen",
+          "label": "故宫博物院 · 清代皇后冠服",
+          "url": "https://www.dpm.org.cn/court/culture/156240.html"
+        },
+        {
+          "id": "nmcMingQingPortraits",
+          "label": "中国国家博物馆 · 明清肖像画专题",
+          "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "清宫礼服、汉女衫裙与旗人骑射装，各有不同的穿着规制。",
+        "female": {
+          "name": "皇后朝服",
+          "garmentLayers": [
+            "朝裙在内，外着朝袍，再加石青朝褂；衣身绣龙纹与云纹。",
+            "朝冠、领约、朝珠、耳饰和采帨按礼仪场合成组佩戴。"
+          ],
+          "hairstyle": "头发梳入朝冠，冠顶饰珠，冠后缀垂带。",
+          "accessories": [
+            [
+              "朝冠",
+              "冠顶饰珠，冠沿垂结绦与装饰件。"
+            ],
+            [
+              "朝珠与耳饰",
+              "朝珠挂于颈间，耳饰为清宫礼仪装饰的一部分。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "清代官员朝服",
+          "garmentLayers": [
+            "圆领朝袍外罩朝褂，胸背补服纹样显示官阶。",
+            "腰束朝带，颈挂朝珠，足穿朝靴。"
+          ],
+          "hairstyle": "剃发留辫，头戴朝冠，帽顶按品级饰件。",
+          "accessories": [
+            [
+              "朝冠",
+              "冠顶宝石和珠饰对应冠服制度。"
+            ],
+            [
+              "朝珠与朝带",
+              "朝珠垂于胸前，朝带横束腰间。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "清",
+      "section": "qing",
+      "look": "market",
+      "title": "城镇日常衫袍",
+      "path": "assets/paintings/sets/qing-market.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子掀开布帘招呼客人，男子搬起木箱转身，姿势不同。",
+      "references": [
+        {
+          "id": "silkQingRobe",
+          "label": "中国丝绸博物馆 · 几何纹暗花绸长袍",
+          "url": "https://www.chinasilkmuseum.com/cs/info_164.aspx?itemid=28358&parent="
+        },
+        {
+          "id": "nmcMingQingPortraits",
+          "label": "中国国家博物馆 · 明清肖像画专题",
+          "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "清宫礼服、汉女衫裙与旗人骑射装，各有不同的穿着规制。",
+        "female": {
+          "name": "汉女短袄长裙",
+          "garmentLayers": [
+            "大襟短袄配长裙，外沿多层镶边；腰间以裙带收束。",
+            "袖口略窄，裙摆宽而有垂坠感，适合日常行走。"
+          ],
+          "hairstyle": "发髻盘圆，簪花和短簪置于髻侧。",
+          "accessories": [
+            [
+              "簪花",
+              "小花饰插在发髻边缘，和衣缘同色呼应。"
+            ],
+            [
+              "耳坠",
+              "金银小坠贴近耳垂，日常佩戴不宜过长。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "城镇商贩长袍马褂",
+          "garmentLayers": [
+            "长袍外套短马褂，交领或圆领随款式变化，腰系布带。",
+            "布靴包住脚踝，衣襟便于开合，适合柜台与街市往来。"
+          ],
+          "hairstyle": "发辫收在小帽内，帽顶平圆。",
+          "accessories": [
+            [
+              "小帽",
+              "便帽包发，帽边收紧。"
+            ],
+            [
+              "钱袋与钥匙",
+              "腰侧系袋与钥匙串，作为店铺日常随身物。"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "period": "清",
+      "section": "qing",
+      "look": "hunt",
+      "title": "旗人骑射行装",
+      "path": "assets/paintings/sets/qing-hunt.jpg",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
+      "activity": "女子策马前行，男子侧身举弓瞄准，马匹与人物同向。",
+      "references": [
+        {
+          "id": "dpmQingTravel",
+          "label": "故宫博物院 · 皇帝行服冠",
+          "url": "https://www.dpm.org.cn/collection/embroider/230402.html"
+        },
+        {
+          "id": "dpmQingQueen",
+          "label": "故宫博物院 · 清代皇后冠服",
+          "url": "https://www.dpm.org.cn/court/culture/156240.html"
+        }
+      ],
+      "contentAnchors": {
+        "focus": "清宫礼服、汉女衫裙与旗人骑射装，各有不同的穿着规制。",
+        "female": {
+          "name": "旗人骑乘女子",
+          "garmentLayers": [
+            "窄袖短袍配裤装，腰束皮带，外披短风衣。",
+            "靴履包住裤脚，衣摆收在腰侧，跨坐时不拖曳。"
+          ],
+          "hairstyle": "发辫收在暖帽或头巾中，耳侧佩小耳饰。",
+          "accessories": [
+            [
+              "暖帽",
+              "软帽贴头，帽带固定于颌下。"
+            ],
+            [
+              "短靴",
+              "靴筒护踝，便于上马和踩镫。"
+            ]
+          ]
+        },
+        "male": {
+          "name": "清代行围男子",
+          "garmentLayers": [
+            "箭袖袍外罩短褂，马蹄袖口翻折，腰系皮带。",
+            "紧腿裤纳入长靴，外披行服短氅，适应风寒与骑射。"
+          ],
+          "hairstyle": "剃发留辫，戴便于出行的行服冠。",
+          "accessories": [
+            [
+              "行服冠",
+              "冠沿风帘可遮挡风沙与日晒。"
+            ],
+            [
+              "弓箭与马鞭",
+              "弓箭囊系腰侧，手持马鞭控马。"
+            ]
+          ]
+        }
+      }
+    }
+  ],
   "sources": {
     "nmc": {
       "label": "中国国家博物馆 · 湖南馆藏专题",
@@ -84,159 +1828,1272 @@
       "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/",
       "kind": "通史阅读",
       "note": "衣冠制度、材料、实物与图像的综合性展览。"
+    },
+    "nmcCostume": {
+      "label": "中国国家博物馆 · 中国古代服饰文化展",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/",
+      "kind": "专题展览",
+      "note": "按历史时期介绍服饰制度、男女服装、发式与配饰；本页用于通史核对。"
+    },
+    "nmcHanStudy": {
+      "label": "中国国家博物馆 · 论楚文化对汉初服饰之影响",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_36502.shtml",
+      "kind": "研究文章",
+      "note": "讨论汉初男子首服、男女深衣与楚地发式影响。"
+    },
+    "nmcWei": {
+      "label": "中国国家博物馆 · 侍从陶俑（北魏）",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211111_252106.shtml",
+      "kind": "馆藏档案",
+      "note": "记载束发小冠、上衣下裤与北朝袴褶服的形制及文化交流。"
+    },
+    "nmcTangMan": {
+      "label": "中国国家博物馆 · 陶男俑（唐）",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252268.shtml",
+      "kind": "馆藏档案",
+      "note": "圆领窄袖袍、幞头、腰带与高靿靴的唐代男装参照。"
+    },
+    "nmcSong": {
+      "label": "中国国家博物馆 · 十二生肖陶俑",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252286.shtml",
+      "kind": "馆藏档案",
+      "note": "说明唐末至宋代文臣俑的冠帽与宽袖袍服表现。"
+    },
+    "silkYuanRobe": {
+      "label": "中国丝绸博物馆 · 元代装饰编织腰带袍",
+      "url": "https://www.chinasilkmuseum.com/zggd/info_103_itemid_25812.html",
+      "kind": "馆藏研究",
+      "note": "元代男性袍服残件；公开交领右衽、窄袖、腰部编织带及骑乘适用性。"
+    },
+    "silkYuanHuarong": {
+      "label": "中国丝绸博物馆 · 雅韵湘传：湖南省博物馆藏宋元服饰展",
+      "url": "https://www.chinasilkmuseum.com/yz/info_18.aspx?itemid=27796",
+      "kind": "展览研究",
+      "note": "介绍华容元墓女装组合、首饰和宋末元初日常服饰。"
+    },
+    "nmcYuan": {
+      "label": "中国国家博物馆 · 元世祖画像",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202208/t20220817_257047.shtml",
+      "kind": "馆藏档案",
+      "note": "介绍元代蒙古男子发式、暖帽与质孙服；与汉族服饰体系分开识读。"
+    },
+    "nmcMingQingPortraits": {
+      "label": "中国国家博物馆 · 明清肖像画专题",
+      "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html",
+      "kind": "专题展览",
+      "note": "说明明清肖像能够为衣着、身份与生活环境研究提供图像证据。"
+    },
+    "ltfc": {
+      "label": "中华珍宝馆 · 历代书画检索",
+      "url": "https://g2.ltfc.net/",
+      "kind": "书画检索入口",
+      "note": "可按画名、作者与时代查高清传世书画；核对作者、摹本年代和作品出处后再用于服饰细节。"
+    },
+    "minghuaji": {
+      "label": "故宫名画记",
+      "url": "https://minghuaji.dpm.org.cn/",
+      "kind": "官方书画平台",
+      "note": "可交互放大故宫藏画；用于观察人物衣纹、发髻和佩饰，需保留馆方断代措辞。"
+    },
+    "palaceCollections": {
+      "label": "故宫博物院 · 数字文物库",
+      "url": "https://www.dpm.org.cn/explore/collections.html",
+      "kind": "馆藏检索入口",
+      "note": "可按类别与材质检索绘画、冠服、首饰与造像；本轮网页读取受限，链接作为后续检索入口。"
+    },
+    "silkPortal": {
+      "label": "中国丝绸博物馆 · 藏品与研究",
+      "url": "https://www.chinasilkmuseum.com/",
+      "kind": "馆藏与学术入口",
+      "note": "优先查出土服饰、保护修复报告、尺寸和组合关系；本页引用到的具体条目另列。"
+    },
+    "hanfuIndex": {
+      "label": "汉服资料馆（用户提供）",
+      "url": "http://120.25.237.190/hanfu",
+      "kind": "民间考据索引",
+      "note": "用户提供的形制与墓葬资料索引；本轮无法连通，未将其作为已核实证据。"
+    },
+    "nmcPortal": {
+      "label": "中国国家博物馆 · 馆藏与展览",
+      "url": "https://www.chnmuseum.cn/",
+      "kind": "馆藏与学术入口",
+      "note": "可按馆藏编目词检索陶俑、肖像、冠服与发饰。"
     }
-  },
-  "images": {
-    "qin": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/images/detail/4/pic4.jpg",
-    "han": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/images/detail/4/pic5.jpg",
-    "song": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229104835836.jpg",
-    "yuan": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105931305.jpg",
-    "yuan-banbi": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105938602.jpg",
-    "qing": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105944539.jpg",
-    "qing-detail": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105945970.jpg",
-    "ming": "https://www.chinasilkmuseum.com/uploadfiles/downloadimg/20171229105528867.jpg",
-    "tang": "https://img.dpm.org.cn/Uploads/Picture/2017/04/01/s58defe50db398.jpg",
-    "five": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de19af038a5.jpg",
-    "yuan-chest": "https://www.chinasilkmuseum.com/uploadfiles/2021/07/20210730105949367.jpg",
-    "wei": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Admonitions_Scroll_Scene_7.jpg"
   },
   "records": [
     {
       "id": "qin",
+      "period": "先秦",
       "title": "人物龙凤帛画中的女子衣装",
-      "type": "painting",
-      "original": "assets/originals/qin.jpg",
-      "additionalImages": [],
-      "redraw": "assets/redraws/qin.png",
-      "diagram": "assets/diagrams/qin.svg",
-      "references": [
-        "nmc",
-        "jade"
+      "museum": "湖南博物院",
+      "date": "战国",
+      "sourceImages": [
+        "assets/originals/qin.jpg"
       ],
-      "limits": "古画仅见侧面。本图并列可见轮廓与未确定部位，不提供虚构的完整裁剪展开。"
+      "references": [
+        {
+          "id": "nmc",
+          "label": "中国国家博物馆 · 湖南馆藏专题",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/details.html?id=4"
+        },
+        {
+          "id": "jade",
+          "label": "中国国家博物馆 · 中国古代玉器",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202308zggdyq/"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        }
+      ],
+      "pairedIllustrations": [
+        {
+          "id": "ritual",
+          "title": "贵族礼仪衣冠",
+          "image": "assets/paintings/sets/qin-ritual.jpg",
+          "activity": "女子整理衣袖、男子举笏相揖，安静呈礼。"
+        },
+        {
+          "id": "market",
+          "title": "市井买卖常服",
+          "image": "assets/paintings/sets/qin-market.jpg",
+          "activity": "女子铺开布匹，男子提秤称量，两人交接货物。"
+        },
+        {
+          "id": "hunt",
+          "title": "胡服骑射行装",
+          "image": "assets/paintings/sets/qin-hunt.jpg",
+          "activity": "男子搭弓候马，女子牵缰整鞍，动作一立一行。"
+        }
+      ]
     },
     {
       "id": "han",
+      "period": "秦汉",
       "title": "直裾素纱襌衣",
-      "type": "textile",
-      "original": "assets/originals/han.jpg",
-      "additionalImages": [],
-      "redraw": "assets/redraws/han.png",
-      "diagram": "assets/diagrams/han.svg",
-      "references": [
-        "nmc",
-        "hanResearch",
-        "jade"
+      "museum": "湖南博物院",
+      "date": "西汉早期",
+      "sourceImages": [
+        "assets/originals/han.jpg"
       ],
-      "limits": "正面平展轮廓依据实物与公开衣长、通袖长绘制；内部接缝、背面与缝份未据测绘确认，不能作为裁剪纸样。"
+      "references": [
+        {
+          "id": "nmc",
+          "label": "中国国家博物馆 · 湖南馆藏专题",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/details.html?id=4"
+        },
+        {
+          "id": "hanResearch",
+          "label": "中国社会科学网 · 西汉素纱襌衣",
+          "url": "https://www.cssn.cn/skgz/bwyc/202609/t20260922_6068425.shtml"
+        },
+        {
+          "id": "jade",
+          "label": "中国国家博物馆 · 中国古代玉器",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202308zggdyq/"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcHanStudy",
+          "label": "中国国家博物馆 · 上衣下袴",
+          "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33119.shtml"
+        }
+      ],
+      "pairedIllustrations": [
+        {
+          "id": "ritual",
+          "title": "士族深衣礼装",
+          "image": "assets/paintings/sets/han-ritual.jpg",
+          "activity": "女子执扇候礼，男子侧身作揖，袖与衣裾各自垂落。"
+        },
+        {
+          "id": "market",
+          "title": "市肆买卖便装",
+          "image": "assets/paintings/sets/han-market.jpg",
+          "activity": "女子递出一篮货物，男子低头清点，姿态贴近日常。"
+        },
+        {
+          "id": "travel",
+          "title": "驿路骑乘行装",
+          "image": "assets/paintings/sets/han-travel.jpg",
+          "activity": "男子骑马回望，女子牵马缓步，衣袖与披风被风带起。"
+        }
+      ]
     },
     {
       "id": "wei",
+      "period": "魏晋南北朝",
       "title": "《女史箴图》梳妆段侍女衣装",
-      "type": "painting",
-      "original": "assets/originals/wei.jpg",
-      "additionalImages": [],
-      "redraw": "assets/redraws/wei.png?v=2.1",
-      "diagram": "assets/diagrams/wei.svg",
-      "references": [
-        "bm",
-        "weiImage"
+      "museum": "大英博物馆",
+      "date": "现存画作：5—7世纪",
+      "sourceImages": [
+        "assets/originals/wei.jpg"
       ],
-      "limits": "上衣与裙的分体关系有馆方说明支持；展开宽度、领襟内层及后身没有测绘依据，以虚线表示推测轮廓。"
+      "references": [
+        {
+          "id": "bm",
+          "label": "大英博物馆 · 女史箴图藏品档案",
+          "url": "https://www.britishmuseum.org/collection/object/A_1903-0408-0-1"
+        },
+        {
+          "id": "weiImage",
+          "label": "女史箴图·梳妆段图像来源",
+          "url": "https://commons.wikimedia.org/wiki/File:Admonitions_Scroll_Scene_7.jpg"
+        },
+        {
+          "id": "nmcWei",
+          "label": "中国国家博物馆 · 侍从陶俑（北魏）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211111_252106.shtml"
+        }
+      ],
+      "pairedIllustrations": [
+        {
+          "id": "gentry",
+          "title": "士族家宴衣冠",
+          "image": "assets/paintings/sets/wei-gentry.jpg",
+          "activity": "女子回身理袖，男子倚案展卷，动作舒展而克制。"
+        },
+        {
+          "id": "market",
+          "title": "坊市日用短衣",
+          "image": "assets/paintings/sets/wei-market.jpg",
+          "activity": "女子递过陶罐，男子接罐后转身放入背篓。"
+        },
+        {
+          "id": "outing",
+          "title": "北朝郊行袴褶",
+          "image": "assets/paintings/sets/wei-outing.jpg",
+          "activity": "女子跨步扶鞍，男子牵马回身，动作一高一低。"
+        }
+      ]
     },
     {
       "id": "tang",
+      "period": "隋唐",
       "title": "《挥扇仕女图》中的衣裙",
-      "type": "painting",
-      "original": "assets/originals/tang.jpg",
-      "additionalImages": [],
-      "redraw": "assets/redraws/tang.png",
-      "diagram": "assets/diagrams/tang.svg",
-      "references": [
-        "tang",
-        "tangStudy"
+      "museum": "故宫博物院",
+      "date": "传唐周昉绘",
+      "sourceImages": [
+        "assets/originals/tang.jpg"
       ],
-      "limits": "衣、裙、帛巾分层是解释性示意；裙头位置与轮廓参考画面，背面、袖接与裙幅未确定。"
+      "references": [
+        {
+          "id": "tang",
+          "label": "故宫博物院 · 挥扇仕女图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228711.html"
+        },
+        {
+          "id": "tangStudy",
+          "label": "中国国家博物馆 · 长安水边多丽人",
+          "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33161.shtml"
+        },
+        {
+          "id": "nmcTangMan",
+          "label": "中国国家博物馆 · 陶男俑（唐）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252268.shtml"
+        }
+      ],
+      "pairedIllustrations": [
+        {
+          "id": "court",
+          "title": "宫廷家礼衣冠",
+          "image": "assets/paintings/sets/tang-court.jpg",
+          "activity": "女子执扇侧立，男子持笏前行，两人衣袖形态不同。"
+        },
+        {
+          "id": "market",
+          "title": "坊市交易衣着",
+          "image": "assets/paintings/sets/tang-market.jpg",
+          "activity": "女子挑选香料，男子抬手指向摊架，两人交谈。"
+        },
+        {
+          "id": "hunt",
+          "title": "骑猎胡服行装",
+          "image": "assets/paintings/sets/tang-hunt.jpg",
+          "activity": "女子回身拉缰，男子弯臂持弓，骏马向前踏步。"
+        }
+      ]
     },
     {
       "id": "five",
+      "period": "五代十国",
       "title": "《韩熙载夜宴图》持扇女子衣装",
-      "type": "painting",
-      "original": "assets/originals/five.jpg",
-      "additionalImages": [],
-      "redraw": "assets/redraws/five.png",
-      "diagram": "assets/diagrams/five.svg",
-      "references": [
-        "five"
+      "museum": "故宫博物院",
+      "date": "南唐题材；现存南宋摹本",
+      "sourceImages": [
+        "assets/originals/five.jpg"
       ],
-      "limits": "此图展示可见长裙、上身及红带的位置关系；不将宋摹本中的线条直接转换为五代实物裁片。"
+      "references": [
+        {
+          "id": "five",
+          "label": "故宫博物院 · 韩熙载夜宴图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228200.html"
+        }
+      ],
+      "pairedIllustrations": [
+        {
+          "id": "banquet",
+          "title": "文士家宴衣冠",
+          "image": "assets/paintings/sets/five-banquet.jpg",
+          "activity": "女子回首举杯，男子抬手相邀，案席留在画面一侧。"
+        },
+        {
+          "id": "market",
+          "title": "五代坊市买卖衣着",
+          "image": "assets/paintings/sets/five-market.jpg",
+          "activity": "女子铺开布帛招呼客人，男子提秤称布，两人隔着货案交谈。"
+        },
+        {
+          "id": "hunt",
+          "title": "骑猎行装",
+          "image": "assets/paintings/sets/five-hunt.jpg",
+          "activity": "女子策马缓行回望，男子侧身举弓，衣带与披风随动作扬起。"
+        }
+      ]
     },
     {
       "id": "song",
+      "period": "两宋",
       "title": "素罗单衣（褙子）",
-      "type": "textile",
-      "original": "assets/originals/song.jpg",
-      "additionalImages": [],
-      "redraw": "assets/redraws/song.png",
-      "diagram": "assets/diagrams/song.svg",
-      "references": [
-        "song",
-        "songExhibit"
+      "museum": "中国丝绸博物馆",
+      "date": "南宋咸淳十年（1274）",
+      "sourceImages": [
+        "assets/originals/song.jpg"
       ],
-      "limits": "衣长、通袖长、侧衩与缘边参考馆方尺寸；图示外轮廓和构件位置，未公开的缝份、内层与后身结构不作补造。"
+      "references": [
+        {
+          "id": "song",
+          "label": "中国丝绸博物馆 · 素罗背子",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1830"
+        },
+        {
+          "id": "songExhibit",
+          "label": "中国丝绸博物馆 · 锦程基本陈列",
+          "url": "https://www.chinasilkmuseum.com/zz/info_17.aspx?itemid=26320"
+        },
+        {
+          "id": "silkYuanHuarong",
+          "label": "中国丝绸博物馆 · 雅韵湘传：湖南省博物馆藏宋元服饰展",
+          "url": "https://www.chinasilkmuseum.com/yz/info_18.aspx?itemid=27796"
+        },
+        {
+          "id": "nmcSong",
+          "label": "中国国家博物馆 · 十二生肖陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252286.shtml"
+        }
+      ],
+      "pairedIllustrations": [
+        {
+          "id": "gentry",
+          "title": "士大夫家庭常服",
+          "image": "assets/paintings/sets/song-gentry.jpg",
+          "activity": "女子替男子整理衣襟，男子执卷回身，神态从容。"
+        },
+        {
+          "id": "market",
+          "title": "汴京市井商贩",
+          "image": "assets/paintings/sets/song-market.jpg",
+          "activity": "女子给顾客递出包裹，男子俯身招呼行人，背景点出摊架。"
+        },
+        {
+          "id": "outing",
+          "title": "踏青出行衣装",
+          "image": "assets/paintings/sets/song-outing.jpg",
+          "activity": "女子抬手遮日，男子牵驴回望，衣摆随行走轻拂。"
+        }
+      ]
     },
     {
       "id": "yuan",
+      "period": "辽金元",
       "title": "印金对襟上衣与半臂",
-      "type": "textile",
-      "original": "assets/originals/yuan.jpg",
-      "additionalImages": [
+      "museum": "中国丝绸博物馆",
+      "date": "元代（1271—1368）",
+      "sourceImages": [
+        "assets/originals/yuan.jpg",
+        "assets/originals/yuan-banbi.jpg",
+        "assets/originals/yuan-chest.jpg"
+      ],
+      "references": [
         {
-          "src": "assets/originals/yuan-banbi.jpg",
-          "label": "绿色花卉纹绫印金方搭子半臂"
+          "id": "yuan",
+          "label": "中国丝绸博物馆 · 元代印金上衣及半臂",
+          "url": "https://www.chinasilkmuseum.com/gskt/info_319.aspx?itemid=28329"
         },
         {
-          "src": "assets/originals/yuan-chest.jpg",
-          "label": "半臂上的印金胸背局部"
+          "id": "silkYuanRobe",
+          "label": "中国丝绸博物馆 · 元代装饰编织腰带袍",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_103_itemid_25812.html"
+        },
+        {
+          "id": "silkYuanHuarong",
+          "label": "中国丝绸博物馆 · 雅韵湘传：湖南省博物馆藏宋元服饰展",
+          "url": "https://www.chinasilkmuseum.com/yz/info_18.aspx?itemid=27796"
+        },
+        {
+          "id": "nmcYuan",
+          "label": "中国国家博物馆 · 元世祖画像",
+          "url": "https://www.chnmuseum.cn/zp/zpml/csp/202208/t20220817_257047.shtml"
         }
       ],
-      "redraw": "assets/redraws/yuan.png",
-      "diagram": "assets/diagrams/yuan.svg",
-      "references": [
-        "yuan"
-      ],
-      "limits": "分列长袖上衣与短袖半臂，外形依据实物。整衣尺寸未公开，不由胸背尺寸反算整衣；没有推定下装。"
+      "pairedIllustrations": [
+        {
+          "id": "court",
+          "title": "元代贵族衣冠",
+          "image": "assets/paintings/sets/yuan-court.jpg",
+          "activity": "女子持扇静立，男子扶带侧身，姿态沉稳而各异。"
+        },
+        {
+          "id": "market",
+          "title": "元代市井常服",
+          "image": "assets/paintings/sets/yuan-market.jpg",
+          "activity": "女子查看布料，男子俯身系紧货包，动作一站一蹲。"
+        },
+        {
+          "id": "hunt",
+          "title": "草原骑射衣装",
+          "image": "assets/paintings/sets/yuan-hunt.jpg",
+          "activity": "女子骑马张望，男子侧身拉弓，马首朝向画外。"
+        }
+      ]
     },
     {
       "id": "ming",
+      "period": "明",
       "title": "钱氏女子衫裙三件套",
-      "type": "textile",
-      "original": "assets/originals/ming.jpg",
-      "additionalImages": [],
-      "redraw": "assets/redraws/ming.png",
-      "diagram": "assets/diagrams/ming.svg",
-      "references": [
-        "ming"
+      "museum": "中国丝绸博物馆",
+      "date": "明初",
+      "sourceImages": [
+        "assets/originals/ming.jpg"
       ],
-      "limits": "分别展示外衫、内衫及裙的轮廓与公开尺寸。不是拆解后的原始裁片，未含缝份及隐藏接缝。"
+      "references": [
+        {
+          "id": "ming",
+          "label": "中国丝绸博物馆 · 绢短袖衫、绮长袖衫与绢裙",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1870"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcMingQingPortraits",
+          "label": "中国国家博物馆 · 明清肖像画专题",
+          "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html"
+        }
+      ],
+      "pairedIllustrations": [
+        {
+          "id": "official",
+          "title": "官宦家礼服",
+          "image": "assets/paintings/sets/ming-official.jpg",
+          "activity": "女子执帕转身，男子持笏趋前，衣冠端整。"
+        },
+        {
+          "id": "market",
+          "title": "市井行商衣着",
+          "image": "assets/paintings/sets/ming-market.jpg",
+          "activity": "女子把货物交给顾客，男子挑担穿行，动作前后错开。"
+        },
+        {
+          "id": "outing",
+          "title": "士人郊行衣装",
+          "image": "assets/paintings/sets/ming-outing.jpg",
+          "activity": "女子执杖跨过浅溪，男子牵马回身相候，步态不一。"
+        }
+      ]
     },
     {
       "id": "qing",
+      "period": "清",
       "title": "彩绣花蝶凤尾裙",
-      "type": "textile",
-      "original": "assets/originals/qing.jpg",
-      "additionalImages": [
+      "museum": "中国丝绸博物馆",
+      "date": "清代",
+      "sourceImages": [
+        "assets/originals/qing.jpg",
+        "assets/originals/qing-detail.jpg"
+      ],
+      "references": [
         {
-          "src": "assets/originals/qing-detail.jpg",
-          "label": "凤尾裙装饰局部"
+          "id": "qing",
+          "label": "中国丝绸博物馆 · 彩绣花蝶凤尾裙",
+          "url": "https://www.chinasilkmuseum.com/zggd/info_21.aspx?itemid=1949"
+        },
+        {
+          "id": "nmcCostume",
+          "label": "中国国家博物馆 · 中国古代服饰文化展",
+          "url": "https://www.chnmuseum.cn/portals/0/web/zt/202102gdfsh/"
+        },
+        {
+          "id": "nmcMingQingPortraits",
+          "label": "中国国家博物馆 · 明清肖像画专题",
+          "url": "https://en.chnmuseum.cn/exhibition/past_exhibitions/202204/t20220429_256191.html"
         }
       ],
-      "redraw": "assets/redraws/qing.png",
-      "diagram": "assets/diagrams/qing.svg",
+      "pairedIllustrations": [
+        {
+          "id": "court",
+          "title": "清宫礼服",
+          "image": "assets/paintings/sets/qing-court.jpg",
+          "activity": "女子转身整理朝褂，男子垂手立于一侧，冠服层次分明。"
+        },
+        {
+          "id": "market",
+          "title": "城镇日常衫袍",
+          "image": "assets/paintings/sets/qing-market.jpg",
+          "activity": "女子掀开布帘招呼客人，男子搬起木箱转身，姿势不同。"
+        },
+        {
+          "id": "hunt",
+          "title": "旗人骑射行装",
+          "image": "assets/paintings/sets/qing-hunt.jpg",
+          "activity": "女子策马前行，男子侧身举弓瞄准，马匹与人物同向。"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "The current illustrated gallery contains three distinct paired looks for each of nine periods. Each image depicts exactly one woman and one man.",
+    "Generated illustrations are visual interpretations; museum and collection records remain the source for historical garment claims.",
+    "The grouped Liao-Jin-Yuan period currently uses Yuan-centered examples.",
+    "Qing dress is presented as a change in dress systems, not as an unchanged continuation of earlier dress.",
+    "Source image URLs record provenance and do not grant reuse or commercial rights."
+  ],
+  "styleReferences": [
+    {
+      "period": "先秦",
+      "section": "qin",
+      "path": "assets/paintings/qin-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "战国楚地画像与深衣木俑",
+        "female": {
+          "name": "楚地贵族女子",
+          "basis": "依据长沙陈家大山战国楚墓《人物龙凤帛画》女性轮廓。",
+          "limit": "衣服内部、背面、具体裁片与下层搭配不能由单幅侧面帛画确认。"
+        },
+        "male": {
+          "name": "战国着深衣男子",
+          "basis": "依据中国国家博物馆《中国古代服饰文化展》所列战国着深衣木俑。",
+          "limit": "木俑与楚墓帛画并非同一人物、同一墓葬或成套出土。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "秦汉",
+      "section": "han",
+      "path": "assets/paintings/han-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "马王堆衣物与汉代冠服资料",
+        "female": {
+          "name": "西汉轻纱衣着",
+          "basis": "依据马王堆一号汉墓直裾素纱襌衣及中国国家博物馆汉代服饰资料。",
+          "limit": "这件单层外衣没有保存其完整穿着者组合；画中的里衣、下装和鞋履为解释性补足。"
+        },
+        "male": {
+          "name": "西汉男子深衣",
+          "basis": "依据中国国家博物馆关于汉初男子首服、男女深衣与汉代服制的研究。",
+          "limit": "汉代跨越数百年，西汉与东汉的衣长、裾式和首服不能合并成一种固定样式。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "魏晋南北朝",
+      "section": "wei",
+      "path": "assets/paintings/wei-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "早期人物画与北魏侍从俑",
+        "female": {
+          "name": "早期人物画中的侍女",
+          "basis": "依据大英博物馆藏《女史箴图》现存摹本梳妆段人物。",
+          "limit": "故事题材、传统作者归属和现存本年代是不同层次；不将摹本直接称为东晋真迹。"
+        },
+        "male": {
+          "name": "北魏侍从袴褶",
+          "basis": "依据中国国家博物馆北魏侍从陶俑：束发小冠、上衣下袴、右衽及袴褶服。",
+          "limit": "魏晋南北朝的南北、族群与身份差异显著，本图只代表北魏侍从一类。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "隋唐",
+      "section": "tang",
+      "path": "assets/paintings/tang-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "故宫仕女图与唐代男俑",
+        "female": {
+          "name": "唐代宫廷仕女",
+          "basis": "依据故宫博物院《挥扇仕女图》人物和中国国家博物馆唐代女性俑。",
+          "limit": "故宫题作“传为唐周昉绘”；图像风格与当时实物之间仍需谨慎比照。"
+        },
+        "male": {
+          "name": "唐代圆领袍常服",
+          "basis": "依据中国国家博物馆陶男俑对幞头、圆领窄袖袍、腰带与高靿靴的记录。",
+          "limit": "唐代服式随年代与身份变化；窄袖常服不能代表全唐全部场合。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "五代十国",
+      "section": "five",
+      "path": "assets/paintings/five-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "南唐题材的《韩熙载夜宴图》",
+        "female": {
+          "name": "夜宴持扇女子",
+          "basis": "依据故宫博物院《韩熙载夜宴图》持扇人物局部。",
+          "limit": "画卷题材为南唐，故宫断定现存本为南宋摹本，须保留这两层时间。"
+        },
+        "male": {
+          "name": "夜宴中的男性宾客",
+          "basis": "依据故宫博物院《韩熙载夜宴图》中的男性宾客形象。",
+          "limit": "人物服装反映绘画传统与摹写时代，不等于南唐衣物实物照片。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "两宋",
+      "section": "song",
+      "path": "assets/paintings/song-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "南宋出土服饰与宋代文臣俑",
+        "female": {
+          "name": "宋代衫裙日常装",
+          "basis": "依据中国丝绸博物馆南宋素罗单衣/背子与宋元墓葬服饰展资料。",
+          "limit": "馆藏命名有“素罗背子”“素罗单衣”等差异；图中完整下装是时代搭配示意，并非同件文物。"
+        },
+        "male": {
+          "name": "宋代文臣袍服",
+          "basis": "依据中国国家博物馆关于宋代生肖文臣俑宽袖袍服与帽冠的说明。",
+          "limit": "文臣俑是随葬艺术类型，不能直接代表宋代所有男性日常服装。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "辽金元",
+      "section": "yuan",
+      "path": "assets/paintings/yuan-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "辽金元分期中的元代样本",
+        "female": {
+          "name": "元墓女子衫裙",
+          "basis": "依据中国丝绸博物馆关于华容元墓女装、首饰和宋末元初日常装束的介绍。",
+          "limit": "辽、金、元政权并存且衣冠各异；本套只以元墓材料为代表，不代替辽金样式。"
+        },
+        "male": {
+          "name": "元代编织腰带袍",
+          "basis": "依据中国丝绸博物馆元代装饰编织腰带袍及国博《元世祖画像》。",
+          "limit": "现存为袍服残件，完整后身、鞋履和穿着者身份不能由残片独立确定。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "明",
+      "section": "ming",
+      "path": "assets/paintings/ming-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "明初三件套与王公肖像",
+        "female": {
+          "name": "明初钱氏女子衫裙",
+          "basis": "依据中国丝绸博物馆明初钱氏女子绢短袖衫、绮长袖衫与绢裙三件套。",
+          "limit": "发式与头饰另取同期馆藏参照，不能说是钱氏墓主原物。"
+        },
+        "male": {
+          "name": "明代官员常服",
+          "basis": "依据国博明代李贞像与明清肖像研究，以及明初冠服制度资料。",
+          "limit": "本图为官员常服样式参照，并非所有明代男性或日常便服的代表。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    },
+    {
+      "period": "清",
+      "section": "qing",
+      "path": "assets/paintings/qing-pair.png",
+      "width": 1024,
+      "height": 1536,
+      "style": "淡彩古画风AI视觉转译",
+      "contentAnchors": {
+        "focus": "清代衣冠制度转型",
+        "female": {
+          "name": "清代衫裙组合示意",
+          "basis": "依据中国丝绸博物馆凤尾裙与国家博物馆清代女衫藏品说明。",
+          "limit": "上衣与裙来自不同藏品记录，是示意搭配，不是同套出土服装。"
+        },
+        "male": {
+          "name": "清制袍褂与辫发",
+          "basis": "依据中国国家博物馆《中国古代服饰文化》关于清代男子服制变革的说明。",
+          "limit": "清代衣冠制度与传统汉服有明显断裂；本图是清代服饰史转型参照，不称作前朝汉服的原样延续。"
+        }
+      },
+      "promptTemplate": "一张竖幅、两位全身人物并列的中国古代衣冠淡彩工笔画，左侧女性、右侧男性，人物从头冠到鞋履完整入画；依所列博物馆藏品、历史人物画或陶俑的服装轮廓与发式绘制，轻绢本纹理、矿物色与淡墨线、克制留白、统一柔和光线与人物比例。衣料层次清楚，避免无依据的华丽装饰、混搭现代化汉服元素、文字、印章、水印与裁片示意。各时代人物不必是同一历史场景，造型不确定处从简。"
+    }
+  ],
+  "legacyPeriodRecords": [
+    {
+      "id": "qin",
+      "period": "先秦",
+      "title": "人物龙凤帛画中的女子衣装",
+      "museum": "湖南博物院",
+      "date": "战国",
+      "original": "assets/originals/qin.jpg",
+      "additionalImages": [],
+      "generated": "assets/paintings/qin-pair.png",
       "references": [
-        "qing"
+        "nmc",
+        "jade",
+        "nmcCostume"
       ],
-      "limits": "展示裙门、褶区、饰条与裙腰关系；全展开布幅和每褶吃势没有测绘依据，图中的褶线为示意。"
+      "interpretiveNote": "本段将一幅楚地女性帛画与战国男性木俑并置，便于比较衣着轮廓，不代表一对历史人物。",
+      "female": {
+        "name": "楚地贵族女子",
+        "set": [
+          "广袖长衣：人物龙凤帛画中可见的长衣轮廓",
+          "衣缘：深色曳地边缘依画中可见线条表现",
+          "内层与鞋履：画面不可见，作为穿着完整性补足并明确标为推测"
+        ],
+        "hair": "结发上挽；画中发式可见，具体发饰材质不可判定。",
+        "accessories": [
+          [
+            "发饰",
+            "只保留结发轮廓，不补画无法辨认的金玉簪钗。"
+          ],
+          [
+            "玉组佩",
+            "战国玉佩仅作同时代配饰资料，不表示它与画中女子同墓或同套。"
+          ]
+        ],
+        "basis": "依据长沙陈家大山战国楚墓《人物龙凤帛画》女性轮廓。",
+        "limit": "衣服内部、背面、具体裁片与下层搭配不能由单幅侧面帛画确认。"
+      },
+      "male": {
+        "name": "战国着深衣男子",
+        "set": [
+          "深衣：上下连属的长衣，轮廓参考国博战国着深衣木俑",
+          "束带：用于收束衣身，纹样与材质不作复原",
+          "履：图中以朴素布履呈现，鞋制细节未由对应木俑确认"
+        ],
+        "hair": "发束于顶，以简朴小冠固定；冠的具体礼制类型不作判定。",
+        "accessories": [
+          [
+            "小冠与束发",
+            "按战国人物俑类形象作简化表达；不能据此判定具体身份等级。"
+          ],
+          [
+            "腰带",
+            "作为成衣搭配的必要构件，材质和带钩样式未被本例确证。"
+          ]
+        ],
+        "basis": "依据中国国家博物馆《中国古代服饰文化展》所列战国着深衣木俑。",
+        "limit": "木俑与楚墓帛画并非同一人物、同一墓葬或成套出土。"
+      }
+    },
+    {
+      "id": "han",
+      "period": "秦汉",
+      "title": "直裾素纱襌衣",
+      "museum": "湖南博物院",
+      "date": "西汉早期",
+      "original": "assets/originals/han.jpg",
+      "additionalImages": [],
+      "generated": "assets/paintings/han-pair.png",
+      "references": [
+        "nmc",
+        "hanResearch",
+        "jade",
+        "nmcCostume",
+        "nmcHanStudy"
+      ],
+      "interpretiveNote": "衣物实测数据来自女性单件遗物；男性套装依据汉代人物俑与服饰研究绘制，证据类型不同。",
+      "female": {
+        "name": "西汉轻纱衣着",
+        "set": [
+          "外层：直裾素纱襌衣，衣长128厘米、通袖长190厘米、重49克",
+          "里衣与下装：展示为便于理解的解释性搭配，并非与这件襌衣配套出土",
+          "履：按汉代图像作简化补足，具体鞋履未与该衣同墓配套"
+        ],
+        "hair": "束发为髻；发式与冠饰随身份、场合而异，此造型不指定具体身份。",
+        "accessories": [
+          [
+            "素纱襌衣",
+            "使用马王堆直裾款数据；不与同墓48克曲裾款混淆。"
+          ],
+          [
+            "腰带与玉饰",
+            "腰带用于表现衣着层次；国博西汉玉佩为同期参照，不宣称属于此衣。"
+          ]
+        ],
+        "basis": "依据马王堆一号汉墓直裾素纱襌衣及中国国家博物馆汉代服饰资料。",
+        "limit": "这件单层外衣没有保存其完整穿着者组合；画中的里衣、下装和鞋履为解释性补足。"
+      },
+      "male": {
+        "name": "西汉男子深衣",
+        "set": [
+          "深衣：按汉初男子曲裾深衣与东汉直裾长衣的时代差异作示意",
+          "冠：以简洁束发小冠表现首服，不擅自指定官职冠名",
+          "腰带与履：只表示穿着层次，材质和具体形制待对应实物确认"
+        ],
+        "hair": "束发入冠；冠制与身份、品阶和场合相关。",
+        "accessories": [
+          [
+            "冠与发式",
+            "国博研究指出汉初男子首服受到楚文化影响；本图不声称对应一种唯一汉冠。"
+          ],
+          [
+            "佩玉",
+            "同期佩玉资料与衣物没有配套关系，图中不补挂具体玉佩。"
+          ]
+        ],
+        "basis": "依据中国国家博物馆关于汉初男子首服、男女深衣与汉代服制的研究。",
+        "limit": "汉代跨越数百年，西汉与东汉的衣长、裾式和首服不能合并成一种固定样式。"
+      }
+    },
+    {
+      "id": "wei",
+      "period": "魏晋南北朝",
+      "title": "《女史箴图》梳妆段侍女衣装",
+      "museum": "大英博物馆",
+      "date": "现存画作：5—7世纪",
+      "original": "assets/originals/wei.jpg",
+      "additionalImages": [],
+      "generated": "assets/paintings/wei-pair.png",
+      "references": [
+        "bm",
+        "weiImage",
+        "nmcWei"
+      ],
+      "interpretiveNote": "女性来自现存早期绘画，男性来自北魏陶俑；这是跨来源的时代并置，不是同一场景复原。",
+      "female": {
+        "name": "早期人物画中的侍女",
+        "set": [
+          "上衣：独立短衣，衣缘与袖口按画中线描表现",
+          "下裙：与上衣分体的长裙，具体裙幅不可由画面换算",
+          "履：被衣摆遮挡，不臆测鞋型"
+        ],
+        "hair": "高髻与发带轮廓取自《女史箴图》梳妆段；现存卷断代为5—7世纪。",
+        "accessories": [
+          [
+            "发饰",
+            "依画面所见表现发髻，不替饰物判定材质。"
+          ],
+          [
+            "梳妆器具",
+            "铜镜、镜台和漆奁属于场景器具，不是身上佩饰。"
+          ]
+        ],
+        "basis": "依据大英博物馆藏《女史箴图》现存摹本梳妆段人物。",
+        "limit": "故事题材、传统作者归属和现存本年代是不同层次；不将摹本直接称为东晋真迹。"
+      },
+      "male": {
+        "name": "北魏侍从袴褶",
+        "set": [
+          "短衣：上身短衣，右衽与宽袖依据北魏侍从俑",
+          "袴：宽裤与束口表现便于活动的袴褶组合",
+          "足衣：俑像未提供本套鞋履细节，画中从简处理"
+        ],
+        "hair": "束发小冠；国博陶俑条目明确记录这一首服。",
+        "accessories": [
+          [
+            "束发小冠",
+            "北魏侍从俑可见；不把不同族属、身份的发式混作一型。"
+          ],
+          [
+            "革带",
+            "作为袴褶穿着的示意性构件，材质和扣饰未据该俑确认。"
+          ]
+        ],
+        "basis": "依据中国国家博物馆北魏侍从陶俑：束发小冠、上衣下袴、右衽及袴褶服。",
+        "limit": "魏晋南北朝的南北、族群与身份差异显著，本图只代表北魏侍从一类。"
+      }
+    },
+    {
+      "id": "tang",
+      "period": "隋唐",
+      "title": "《挥扇仕女图》中的衣裙",
+      "museum": "故宫博物院",
+      "date": "传唐周昉绘",
+      "original": "assets/originals/tang.jpg",
+      "additionalImages": [],
+      "generated": "assets/paintings/tang-pair.png",
+      "references": [
+        "tang",
+        "tangStudy",
+        "nmcTangMan"
+      ],
+      "interpretiveNote": "盛唐仕女图与国博唐代男俑作为男女服饰样本并置；不是同一幅原画中的男女配对。",
+      "female": {
+        "name": "唐代宫廷仕女",
+        "set": [
+          "上衣：短襦或窄身上衣，按画中层次简化呈现",
+          "下裙：高腰长裙，衣褶与色块依《挥扇仕女图》观察",
+          "帛巾：绕臂长带为图像所见，不推定每一处穿法"
+        ],
+        "hair": "高髻取自画卷人物；唐代不同时段、身份和场合发式有差异。",
+        "accessories": [
+          [
+            "高髻",
+            "依据故宫画卷可见轮廓，不将其概括为全唐唯一发型。"
+          ],
+          [
+            "长帛与扇",
+            "帛巾和手持扇分开说明；扇为道具，不属于衣服本体。"
+          ]
+        ],
+        "basis": "依据故宫博物院《挥扇仕女图》人物和中国国家博物馆唐代女性俑。",
+        "limit": "故宫题作“传为唐周昉绘”；图像风格与当时实物之间仍需谨慎比照。"
+      },
+      "male": {
+        "name": "唐代圆领袍常服",
+        "set": [
+          "圆领窄袖袍：参照国博唐代陶男俑所见基本形制",
+          "腰带：用于束袍，具体颜色与等级标识因人而异",
+          "高靿靴：按唐代男俑常见完整穿着表现"
+        ],
+        "hair": "幞头包覆头发；形制随唐代前后期发生变化，本图不指定某一阶段变体。",
+        "accessories": [
+          [
+            "幞头",
+            "国博男俑说明其为唐代男子常服的重要组成。"
+          ],
+          [
+            "腰带与靴",
+            "为衣着组合的构件；材质和等级不能从一件人物俑外推。"
+          ]
+        ],
+        "basis": "依据中国国家博物馆陶男俑对幞头、圆领窄袖袍、腰带与高靿靴的记录。",
+        "limit": "唐代服式随年代与身份变化；窄袖常服不能代表全唐全部场合。"
+      }
+    },
+    {
+      "id": "five",
+      "period": "五代十国",
+      "title": "《韩熙载夜宴图》持扇女子衣装",
+      "museum": "故宫博物院",
+      "date": "南唐题材；现存南宋摹本",
+      "original": "assets/originals/five.jpg",
+      "additionalImages": [],
+      "generated": "assets/paintings/five-pair.png",
+      "references": [
+        "five"
+      ],
+      "interpretiveNote": "同一画卷可观察男女宴饮衣装；现存画面为南宋摹本，不能把画中细节视作五代实物。",
+      "female": {
+        "name": "夜宴持扇女子",
+        "set": [
+          "上身：层叠长衣，领口与衣缘按现存画卷可见处表达",
+          "下身：长裙，以画中人物轮廓为依据",
+          "长带：红色垂带按画面位置表现，不推定背面系法"
+        ],
+        "hair": "盘髻取自画中人物；不补画画面无法辨明的簪钗材质。",
+        "accessories": [
+          [
+            "长柄团扇",
+            "依据持扇人物可见器物；材质不由画面推定。"
+          ],
+          [
+            "红色长带",
+            "画面可见其垂落位置，具体结法仍未知。"
+          ]
+        ],
+        "basis": "依据故宫博物院《韩熙载夜宴图》持扇人物局部。",
+        "limit": "画卷题材为南唐，故宫断定现存本为南宋摹本，须保留这两层时间。"
+      },
+      "male": {
+        "name": "夜宴中的男性宾客",
+        "set": [
+          "宽袖长袍：依画中不同男性人物的衣身轮廓概括",
+          "冠帽：采用画中可见的黑色软帽/幞头类轮廓，不据此细分官阶",
+          "腰带与履：画面部分遮挡，细节以简洁示意处理"
+        ],
+        "hair": "头发由帽巾覆盖；帽形按画中人物表现，不假定整卷人物身份相同。",
+        "accessories": [
+          [
+            "冠帽",
+            "以原画人物为依据；不将南宋摹写中的线条当成独立实物记录。"
+          ],
+          [
+            "腰带",
+            "属于衣着组合的示意性补足，具体扣饰不作断言。"
+          ]
+        ],
+        "basis": "依据故宫博物院《韩熙载夜宴图》中的男性宾客形象。",
+        "limit": "人物服装反映绘画传统与摹写时代，不等于南唐衣物实物照片。"
+      }
+    },
+    {
+      "id": "song",
+      "period": "两宋",
+      "title": "素罗单衣（褙子）",
+      "museum": "中国丝绸博物馆",
+      "date": "南宋咸淳十年（1274）",
+      "original": "assets/originals/song.jpg",
+      "additionalImages": [],
+      "generated": "assets/paintings/song-pair.png",
+      "references": [
+        "song",
+        "songExhibit",
+        "silkYuanHuarong",
+        "nmcSong"
+      ],
+      "interpretiveNote": "女性主件为出土纺织品，男性依据为陶俑图像；两者属于不同材料证据。",
+      "female": {
+        "name": "宋代衫裙日常装",
+        "set": [
+          "上衣：直领衫或素罗单衣，窄缘与布纽按丝绸博物馆藏品表达",
+          "下裙：长裙，与短上衣共同构成日常衣着层次",
+          "裤与鞋：宋元墓葬资料可见衬裤、鞋履；本图作简化穿着示意"
+        ],
+        "hair": "发髻以简洁低盘髻呈现；不把某一地域的发式推广为全宋定式。",
+        "accessories": [
+          [
+            "布纽与衣缘",
+            "素罗单衣的布纽、罗缘是服装构件，不是首饰。"
+          ],
+          [
+            "木梳与簪",
+            "宋墓出土妆具可作同时代参照；未与本件背子确认同套。"
+          ]
+        ],
+        "basis": "依据中国丝绸博物馆南宋素罗单衣/背子与宋元墓葬服饰展资料。",
+        "limit": "馆藏命名有“素罗背子”“素罗单衣”等差异；图中完整下装是时代搭配示意，并非同件文物。"
+      },
+      "male": {
+        "name": "宋代文臣袍服",
+        "set": [
+          "宽袖长袍：参照国博宋代文臣类生肖俑所见袍服",
+          "冠帽：采用宋代文臣俑所见冠帽轮廓，不细分官职等级",
+          "腰带与靴：作为整套衣着配件表现，具体品级制度不由一件俑推断"
+        ],
+        "hair": "发髻由冠帽覆盖；宋代帽冠类型繁多，图中不指向特定官阶。",
+        "accessories": [
+          [
+            "朝冠或弁帽",
+            "国博说明宋代文臣俑有朝冠或弁帽两类形象。"
+          ],
+          [
+            "腰带",
+            "作为穿着构件呈现；不标示品级或玉带等级。"
+          ]
+        ],
+        "basis": "依据中国国家博物馆关于宋代生肖文臣俑宽袖袍服与帽冠的说明。",
+        "limit": "文臣俑是随葬艺术类型，不能直接代表宋代所有男性日常服装。"
+      }
+    },
+    {
+      "id": "yuan",
+      "period": "辽金元",
+      "title": "印金对襟上衣与半臂",
+      "museum": "中国丝绸博物馆",
+      "date": "元代（1271—1368）",
+      "original": "assets/originals/yuan.jpg",
+      "additionalImages": [
+        "assets/originals/yuan-banbi.jpg",
+        "assets/originals/yuan-chest.jpg"
+      ],
+      "generated": "assets/paintings/yuan-pair.png",
+      "references": [
+        "yuan",
+        "silkYuanRobe",
+        "silkYuanHuarong",
+        "nmcYuan"
+      ],
+      "interpretiveNote": "本段沿用“辽金元”阅读分期，但实际服装样本明确标注为元代；元代汉族与蒙古族服饰也不合并成一种。",
+      "female": {
+        "name": "元墓女子衫裙",
+        "set": [
+          "直领短衫：参考华容元墓服饰展所述宋末元初女装",
+          "长裙：采用方片裙的基本轮廓，色彩与纹样为图像转译",
+          "衬裤与翘头履：参考同一墓葬服饰类型说明"
+        ],
+        "hair": "发髻与簪钗按墓葬女主人多层服饰及金银发饰资料表现；不指定未公布的单件配套关系。",
+        "accessories": [
+          [
+            "金银簪钗、耳环",
+            "华容元墓资料记录女墓主佩饰；未认定为某一件衣服的固定附件。"
+          ],
+          [
+            "梳篦与镜",
+            "属妆具，可用于研究发式，不等同于发上装饰。"
+          ]
+        ],
+        "basis": "依据中国丝绸博物馆关于华容元墓女装、首饰和宋末元初日常装束的介绍。",
+        "limit": "辽、金、元政权并存且衣冠各异；本套只以元墓材料为代表，不代替辽金样式。"
+      },
+      "male": {
+        "name": "元代编织腰带袍",
+        "set": [
+          "交领右衽袍：参照中国丝绸博物馆元代男袍残件",
+          "腰部：宽编织带为此袍的突出结构特征",
+          "下摆与袖：窄袖、聚腰、宽松下摆，适合骑乘活动"
+        ],
+        "hair": "元代蒙古男子发式见《元世祖画像》及国博说明；暖帽与垂辫只代表特定族属样式。",
+        "accessories": [
+          [
+            "编织腰带",
+            "馆方藏品资料直接记录的袍服构件。"
+          ],
+          [
+            "暖帽与辫环",
+            "依据元世祖画像作蒙古贵族参照，不与汉族衣冠混为一式。"
+          ]
+        ],
+        "basis": "依据中国丝绸博物馆元代装饰编织腰带袍及国博《元世祖画像》。",
+        "limit": "现存为袍服残件，完整后身、鞋履和穿着者身份不能由残片独立确定。"
+      }
+    },
+    {
+      "id": "ming",
+      "period": "明",
+      "title": "钱氏女子衫裙三件套",
+      "museum": "中国丝绸博物馆",
+      "date": "明初",
+      "original": "assets/originals/ming.jpg",
+      "additionalImages": [],
+      "generated": "assets/paintings/ming-pair.png",
+      "references": [
+        "ming",
+        "nmcCostume",
+        "nmcMingQingPortraits"
+      ],
+      "interpretiveNote": "女性是出土服装三件套，男性是肖像和服制资料形成的官员样本；身份场景并不相同。",
+      "female": {
+        "name": "明初钱氏女子衫裙",
+        "set": [
+          "里层长袖衫：方格纹绮长袖衫",
+          "外层短袖衫：绢短袖衫，领缘刺绣、系带可见",
+          "下裙：绢裙与大褶结构，依馆藏三件套组合表现"
+        ],
+        "hair": "以明代髻式为基础；国博金丝䯼髻作发饰参照，但未证明属于钱氏服装组合。",
+        "accessories": [
+          [
+            "金丝䯼髻",
+            "国博藏明代发饰实物，用于了解髻饰类型，不与钱氏衣物强行配套。"
+          ],
+          [
+            "门襟系带与刺绣领缘",
+            "均为三件套实物可辨构件。"
+          ]
+        ],
+        "basis": "依据中国丝绸博物馆明初钱氏女子绢短袖衫、绮长袖衫与绢裙三件套。",
+        "limit": "发式与头饰另取同期馆藏参照，不能说是钱氏墓主原物。"
+      },
+      "male": {
+        "name": "明代官员常服",
+        "set": [
+          "圆领袍：按国博明代人物肖像与服饰通史资料呈现",
+          "乌纱帽：明代官员常见首服图像参照",
+          "革带、佩绶与靴：只表达常服层次，不为补子标定具体品级"
+        ],
+        "hair": "发髻纳入乌纱帽内；冠帽形制和袍色随官阶、制度与时期变化。",
+        "accessories": [
+          [
+            "乌纱帽与革带",
+            "官员身份衣冠的一部分；画稿不指定品级。"
+          ],
+          [
+            "补子",
+            "明代官服等级标识之一；图中保持纹样模糊，不虚构官阶或禽兽图案。"
+          ]
+        ],
+        "basis": "依据国博明代李贞像与明清肖像研究，以及明初冠服制度资料。",
+        "limit": "本图为官员常服样式参照，并非所有明代男性或日常便服的代表。"
+      }
+    },
+    {
+      "id": "qing",
+      "period": "清",
+      "title": "彩绣花蝶凤尾裙",
+      "museum": "中国丝绸博物馆",
+      "date": "清代",
+      "original": "assets/originals/qing.jpg",
+      "additionalImages": [
+        "assets/originals/qing-detail.jpg"
+      ],
+      "generated": "assets/paintings/qing-pair.png",
+      "references": [
+        "qing",
+        "nmcCostume",
+        "nmcMingQingPortraits"
+      ],
+      "interpretiveNote": "清代男女图像用于呈现服制转型。女衫与凤尾裙来自不同藏品；不宣称为同一套衣物。",
+      "female": {
+        "name": "清代衫裙组合示意",
+        "set": [
+          "上衣：蓝灰色多重镶滚女衫，依据国博藏品描述",
+          "下裙：彩绣花蝶凤尾裙，依据中国丝绸博物馆藏品",
+          "履与里层：以朴素布鞋和内衬补足完整穿着，未与两件裙衫认作同套"
+        ],
+        "hair": "清代发式随旗籍、地域和身份而异；以简洁盘髻和少量簪花作时期提示，不代表唯一旗髻。",
+        "accessories": [
+          [
+            "凤尾饰条",
+            "来源裙装上的装饰构件，不是独立配饰。"
+          ],
+          [
+            "簪花",
+            "发饰类型作时代提示；未与此裙或上衣确认同墓配套。"
+          ]
+        ],
+        "basis": "依据中国丝绸博物馆凤尾裙与国家博物馆清代女衫藏品说明。",
+        "limit": "上衣与裙来自不同藏品记录，是示意搭配，不是同套出土服装。"
+      },
+      "male": {
+        "name": "清制袍褂与辫发",
+        "set": [
+          "长袍：以清代男性袍服制度作代表性外衣",
+          "马褂式外层：展示袍褂层次，款式与装饰保持素净",
+          "鞋履：用简朴布靴完成穿着组合，不复原具体等级"
+        ],
+        "hair": "剃发留辫与清代男子服饰制度相关；本图仅作概括性发式，不指向具体族籍或官阶。",
+        "accessories": [
+          [
+            "帽与辫发",
+            "国博服饰通史指出清代男子服制发生制度性变更；不把其误称为前朝冠制。"
+          ],
+          [
+            "袍褂",
+            "清代衣冠体系吸收并改造汉族礼制元素，需结合具体时期和身份阅读。"
+          ]
+        ],
+        "basis": "依据中国国家博物馆《中国古代服饰文化》关于清代男子服制变革的说明。",
+        "limit": "清代衣冠制度与传统汉服有明显断裂；本图是清代服饰史转型参照，不称作前朝汉服的原样延续。"
+      }
     }
   ]
 }
