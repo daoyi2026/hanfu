@@ -75,7 +75,7 @@ const PAIRS = {
       ['骑猎胡服', '唐代女俑可见圆领紧袖衣、袴、束带和骑乘姿态；马具铃饰、革带和软靴共同构成骑猎装束。']
     ],
     sets: [
-      {id:'court', label:'宫廷', title:'宫廷家礼衣冠', activity:'女子执扇侧立，男子持笏前行，两人衣袖形态不同。', image:'assets/paintings/sets/tang-court.jpg', refs:['tang','nmcTangMan','nmcCostume'],
+      {id:'court', label:'宫廷', title:'宫廷家礼衣冠', activity:'女子执团扇侧立，男子躬身执笏行礼，姿态一立一俯。', image:'assets/paintings/sets/tang-court.jpg', refs:['tang','nmcTangMan','nmcCostume'],
        female:{name:'宫廷仕女襦裙',layers:['短襦外搭半臂，下着高腰长裙，裙带上提至胸下。','披帛从肩臂绕行，裙缘长及地面，色彩以绯红、石绿相配。'],hair:'高髻层叠，髻侧簪花或金钿，耳边留出短鬓。',accessories:[['披帛','轻薄长巾绕臂而下，随步幅飘动。'],['金钿与簪花','簪花插在高髻一侧，金钿点缀额际或鬓边。']]},
        male:{name:'唐代官员圆领袍',layers:['圆领窄袖袍身及踝，腰间束革带，袍下露出长靴。','外衣开衩利于迈步，衣色和腰带等级随身份而异。'],hair:'头发纳入幞头，帽脚贴于两侧或向后舒展。',accessories:[['幞头','软质头巾包发，帽脚为唐代男子常见轮廓。'],['革带与靴','革带束腰，靴筒收住裤脚，适合步行与骑乘。']]}
       },
@@ -83,7 +83,7 @@ const PAIRS = {
        female:{name:'坊市女商人胡服',layers:['翻领窄袖短袍配长裤，衣身束在腰带内，外搭半臂。','裤脚收进软靴，便于穿行和搬动摊货。'],hair:'双股高髻，髻顶插一梳，耳侧留短鬓。',accessories:[['半臂','无袖短衣罩在窄袖袍外，突出肩背层次。'],['小梳与耳饰','梳篦固定发髻，耳饰贴近耳垂，不作夸张长坠。']]},
        male:{name:'唐代坊市行商',layers:['圆领窄袖袍配长裤，腰束宽带，衣摆开衩便于行走。','肩披货布，袖口利落，靴履适合长时间站立。'],hair:'幞头包发，额前收紧，帽顶低平。',accessories:[['布货担','轻布担或小包裹系于肩侧，作为行商随身物。'],['腰带','宽腰带固定衣襟，绳结收在侧后。']]}
       },
-      {id:'hunt', label:'骑猎', title:'骑猎胡服行装', activity:'女子回身拉缰，男子弯臂持弓，骏马向前踏步。', image:'assets/paintings/sets/tang-hunt.jpg', refs:['nmcTangRide','nmcTangCrossdress','nmcTangMan'],
+      {id:'hunt', label:'骑猎', title:'骑猎胡服行装', activity:'女子牵住马缰回望，男子立于马侧张弓瞄准，一静一动。', image:'assets/paintings/sets/tang-hunt.jpg', refs:['nmcTangRide','nmcTangCrossdress','nmcTangMan'],
        female:{name:'唐代骑马女子',layers:['圆领紧袖长衣配紧腿裤，腰束革带，裤脚收进尖头履。','短披风压住肩背，衣摆便于跨坐鞍上。'],hair:'双螺髻或双髻收于耳上，髻后插一枚细簪。',accessories:[['革带与铃饰','马具以革带和小铃装饰；衣身腰带固定骑乘衣装。'],['骑靴','靴履包脚踝，骑乘时不易脱落。']]},
        male:{name:'唐代猎骑男子',layers:['窄袖胡服配袴，衣襟翻领，腰束革带，外披短风衣。','长靴收束裤脚，手臂穿护腕，适于持弓控缰。'],hair:'幞头包发，外加贴头软帽。',accessories:[['弓与箭囊','弓囊悬腰侧，箭袋背负肩后。'],['护腕','皮质护腕护住前臂，拉弓时避免擦伤。']]}
       }

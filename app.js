@@ -11,7 +11,7 @@ let activeEra = 'qin', filter = 'all', currentRecord = null, currentTab = 'ensem
 const pairChoice = Object.fromEntries(RECORDS.map(record => [record.id, 0]));
 let lastDetailTrigger = null, toastTimer;
 const viewport = $('#scroll-viewport'), detail = $('#detail-dialog'), zoom = $('#zoom-dialog');
-const tabs = [['ensemble','三套男女'],['hair','发型配饰'],['research','衣装解读'],['sources','史料来源']];
+const tabs = [['ensemble','男女衣装'],['hair','发型配饰'],['research','衣装解读'],['sources','史料来源']];
 
 function selectedPair(id, index = pairChoice[id] || 0) { return PAIRS[id].sets[index] || PAIRS[id].sets[0]; }
 function pairDisplayTitle(record, pair) { return pair.title.includes(record.era) ? pair.title : `${pair.title}（${record.era}）`; }
@@ -67,7 +67,7 @@ function landscape() {
   return '<svg class="scroll-landscape" viewBox="0 0 4600 500" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#8a9274" stroke-width="1"><path d="M0 419Q140 365 290 415T610 404T940 422T1250 402T1580 416T1930 398T2240 420T2540 400T2880 415T3220 401T3540 420T3840 401T4170 417T4600 398"/><path d="M0 432Q200 407 360 436T700 425T1060 437T1430 422T1830 440T2220 423T2590 440T3000 422T3400 443T3810 424T4210 440T4600 421"/><path d="M0 446Q370 432 580 450T1150 451T1700 450T2300 451T2870 450T3500 453T4070 450T4600 447"/></g><g fill="#9ea98b" opacity=".25"><path d="M0 372L78 330L115 346L163 304L226 344L283 312L348 363L420 349L502 391L602 416H0Z"/><path d="M760 395L810 365L840 382L902 306L939 329L992 265L1040 299L1073 282L1154 370L1260 397L1350 428H720Z"/><path d="M1550 405L1610 360L1660 380L1720 310L1762 346L1790 330L1870 375L1970 418H1550Z"/><path d="M2390 415L2450 360L2490 380L2550 310L2615 267L2660 319L2710 300L2790 370L2890 400L2950 425H2360Z"/><path d="M3470 412L3535 330L3580 352L3640 281L3690 315L3730 303L3820 386L3920 410L4030 434H3430Z"/></g></svg>';
 }
 function renderScroll() {
-  $('#scroll-track').innerHTML = landscape() + '<div class="scroll-preface"><h2>衣冠千年</h2><p>一襟一袖皆有来处<br>一针一线俱是时光</p><span class="small-seal">衣章</span></div>' + RECORDS.map((r,index) => {const pair=selectedPair(r.id);const displayTitle=pairDisplayTitle(r,pair);return `<article class="scroll-scene ${r.type}" id="scene-${r.id}" data-scene="${r.id}" style="--accent:${r.color}"><div class="scene-era"><strong>${r.era}</strong><span>${r.en} · ${r.range}</span></div><button class="scene-painting" data-detail="${r.id}" aria-label="细看${displayTitle}男女成对衣装"><img src="${pair.image}" alt="${displayTitle}，一男一女古画风造型" loading="${index<3?'eager':'lazy'}" draggable="false"></button>${pairPicker(r.id,pairChoice[r.id]||0)}<div class="scene-caption"><div><h3 class="scene-title">${pair.title}</h3><p class="scene-meta">${pair.female.name} · ${pair.male.name}</p></div><span class="scene-index">${String(index+1).padStart(2,'0')}</span></div></article>`;}).join('') + '<div class="scroll-ending"><h2>衣脉相承</h2><p>看过来时路<br>再穿今日衣</p><span class="small-seal">续</span></div>';
+  $('#scroll-track').innerHTML = landscape() + '<div class="scroll-preface"><h2>衣冠千年</h2><p>一襟一袖皆有来处<br>一针一线俱是时光</p><span class="small-seal">衣章</span></div>' + RECORDS.map((r,index) => {const pair=selectedPair(r.id);const displayTitle=pairDisplayTitle(r,pair);return `<article class="scroll-scene ${r.type}" id="scene-${r.id}" data-scene="${r.id}" style="--accent:${r.color}"><div class="scene-era"><strong>${r.era}</strong><span>${r.en} · ${r.range}</span></div><button class="scene-painting" data-detail="${r.id}" aria-label="细看${displayTitle}男女成对衣装"><img class="painting-art" src="${pair.image}" alt="${displayTitle}，一男一女古画风造型" loading="${index<3?'eager':'lazy'}" draggable="false"></button>${pairPicker(r.id,pairChoice[r.id]||0)}<div class="scene-caption"><div><h3 class="scene-title">${pair.title}</h3><p class="scene-meta">${pair.female.name} · ${pair.male.name}</p></div><span class="scene-index">${String(index+1).padStart(2,'0')}</span></div></article>`;}).join('') + '<div class="scroll-ending"><h2>衣脉相承</h2><p>看过来时路<br>再穿今日衣</p><span class="small-seal">续</span></div>';
 }
 function renderTimeline() {
   $('#timeline').innerHTML = RECORDS.map(r => `<button data-era="${r.id}" class="${r.id===activeEra?'active':''}" aria-pressed="${r.id===activeEra}" aria-controls="scroll-viewport">${r.era}<small>${r.range}</small></button>`).join('');
@@ -100,8 +100,8 @@ function renderCards() {
   const query=$('#search').value.trim().toLocaleLowerCase();
   const searchable=r=>{const pairs=PAIRS[r.id].sets;return [r.era,r.material,r.museum,r.date,...r.tags,PAIRS[r.id].focus,...pairs.flatMap(pair=>[pair.title,pair.activity,pair.female.name,...pair.female.layers,pair.female.hair,...pair.female.accessories.flat(),pair.male.name,...pair.male.layers,pair.male.hair,...pair.male.accessories.flat()])].join(' ').toLocaleLowerCase();};
   const matches=RECORDS.filter(r=>(filter==='all'||(filter==='saved'?saved.has(r.id):r.type===filter))&&searchable(r).includes(query));
-  $('#cards').innerHTML=matches.length?matches.map(r=>{const selected=pairChoice[r.id]||0,pair=selectedPair(r.id,selected),displayTitle=pairDisplayTitle(r,pair);return `<article class="card" id="card-${r.id}"><div class="card-art"><button class="card-image" data-detail="${r.id}" aria-label="查看${displayTitle}"><img src="${pair.image}" loading="lazy" alt="${displayTitle}，一男一女古画风造型"></button><span class="card-era">${r.era}</span><span class="card-status">三套男女成对造型</span><button class="save-card" data-save="${r.id}"></button></div>${pairPicker(r.id,selected)}<button class="card-title" data-detail="${r.id}"><strong>${r.era} · ${pair.title}</strong><span>↗</span></button><p class="card-meta">${pair.female.name} · ${pair.male.name}</p></article>`;}).join(''):`<div class="empty">${filter==='saved'&&!query?'藏衣匣尚空。打开喜欢的时代，收藏三套男女衣装。':'没有找到相符的衣名、场景、发型或配饰。'}<button id="clear-filters">查看全部衣冠</button></div>`;
-  $('#result-count').textContent=`共 ${matches.length} 个历史分期 · ${matches.length*3} 套男女成对造型`;
+  $('#cards').innerHTML=matches.length?matches.map(r=>{const selected=pairChoice[r.id]||0,pair=selectedPair(r.id,selected),displayTitle=pairDisplayTitle(r,pair);return `<article class="card" id="card-${r.id}"><div class="card-art"><button class="card-image" data-detail="${r.id}" aria-label="查看${displayTitle}"><img class="painting-art" src="${pair.image}" loading="lazy" alt="${displayTitle}，一男一女古画风造型"></button><span class="card-era">${r.era}</span><span class="card-status">三种生活场景</span><button class="save-card" data-save="${r.id}"></button></div>${pairPicker(r.id,selected)}<button class="card-title" data-detail="${r.id}"><strong>${r.era} · ${pair.title}</strong><span>↗</span></button><p class="card-meta">${pair.female.name} · ${pair.male.name}</p></article>`;}).join(''):`<div class="empty">${filter==='saved'&&!query?'藏衣匣尚空。打开喜欢的时代，收藏喜欢的服饰造型。':'没有找到相符的衣名、场景、发型或配饰。'}<button id="clear-filters">查看全部衣冠</button></div>`;
+  $('#result-count').textContent=`共 ${matches.length} 个历史分期 · ${matches.length*3} 组生活场景`;
   $$('[data-filter]').forEach(button=>{const on=button.dataset.filter===filter;button.classList.toggle('active',on);button.setAttribute('aria-pressed',String(on));});
   updateSavedButtons();
 }
@@ -135,7 +135,7 @@ function originalImages(r) {return [{src:r.original,label:r.name},...(r.extra||[
 function ensemblePanel(r) {
   const pair=selectedPair(r.id,currentPairIndex);
   const people=[['female','女性',pair.female],['male','男性',pair.male]];
-  return `${pairPicker(r.id,currentPairIndex)}<div class="ensemble-layout"><div class="ensemble-visual"><button class="image-frame ensemble-frame" data-zoom-src="${pair.image}" data-zoom-label="${escapeHTML(r.era)} · ${escapeHTML(pair.title)}" data-zoom-note="淡彩古画风插画 · 以馆藏服饰、人物画和出土造型为参考" aria-label="放大查看${pair.title}"><img src="${pair.image}" alt="${pairDisplayTitle(r,pair)}，左侧女性、右侧男性完整造型"></button><p class="image-caption">点击放大 · 左为女性，右为男性。${pair.activity}</p></div><div class="ensemble-members">${people.map(([key,label,person])=>`<section class="ensemble-member ${key}"><span>${label} · ${pair.label}</span><h3>${person.name}</h3><ul>${person.layers.map(item=>`<li>${item}</li>`).join('')}</ul><p class="hair-summary"><b>发式</b>${person.hair}</p><div class="accessory-summary">${person.accessories.map(([title,text])=>`<p><b>${title}</b>${text}</p>`).join('')}</div></section>`).join('')}</div></div><button class="primary" data-save="${r.id}"></button>`;
+  return `${pairPicker(r.id,currentPairIndex)}<div class="ensemble-layout"><div class="ensemble-visual"><button class="image-frame ensemble-frame" data-zoom-src="${pair.image}" data-zoom-art="true" data-zoom-label="${escapeHTML(r.era)} · ${escapeHTML(pair.title)}" data-zoom-note="淡彩古画风插画 · 以馆藏服饰、人物画和出土造型为参考" aria-label="放大查看${pair.title}"><img class="painting-art" src="${pair.image}" alt="${pairDisplayTitle(r,pair)}，左侧女性、右侧男性完整造型"></button><p class="image-caption">点击放大 · 左为女性，右为男性。${pair.activity}</p></div><div class="ensemble-members">${people.map(([key,label,person])=>`<section class="ensemble-member ${key}"><span>${label} · ${pair.label}</span><h3>${person.name}</h3><ul>${person.layers.map(item=>`<li>${item}</li>`).join('')}</ul><p class="hair-summary"><b>发式</b>${person.hair}</p><div class="accessory-summary">${person.accessories.map(([title,text])=>`<p><b>${title}</b>${text}</p>`).join('')}</div></section>`).join('')}</div></div><button class="primary" data-save="${r.id}"></button>`;
 }
 function researchPanel(r) {
   const reading=PAIRS[r.id].reading;
@@ -165,11 +165,11 @@ function showEssay(id) {
 }
 function showSources() {
   currentRecord=null;
-  showDialog(`<article class="text-article"><p class="eyebrow">COLLECTIONS & REFERENCES</p><h2 id="dialog-title">服饰图像与馆藏资料</h2><p>本页按九个历史分期整理二十七套男女成对造型，分别呈现礼仪、日常与出行等穿着场景。插画参考博物馆藏品、古画、俑像和纺织品资料。</p><section class="source-advice"><h3>查看原始资料</h3><p>点开具体时代的“史料来源”，可放大该段所依据的馆藏图像；下列馆藏网站也支持按时代、材质、衣物类别和人物形象检索。</p></section>${Object.values(SOURCES).map((s,index)=>`<section class="source-item"><span>${String(index+1).padStart(2,'0')} · ${s.kind}</span><a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.label} ↗</a><p>${s.note}</p></section>`).join('')}</article>`);
+  showDialog(`<article class="text-article"><p class="eyebrow">COLLECTIONS & REFERENCES</p><h2 id="dialog-title">服饰图像与馆藏资料</h2><p>本页按九个历史分期整理二十七幅男女衣装场景，涵盖礼仪、日常与出行。插画参考博物馆藏品、古画、俑像和纺织品资料。</p><section class="source-advice"><h3>查看原始资料</h3><p>点开具体时代的“史料来源”，可放大该段所依据的馆藏图像；下列馆藏网站也支持按时代、材质、衣物类别和人物形象检索。</p></section>${Object.values(SOURCES).map((s,index)=>`<section class="source-item"><span>${String(index+1).padStart(2,'0')} · ${s.kind}</span><a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.label} ↗</a><p>${s.note}</p></section>`).join('')}</article>`);
 }
 function showAbout() {
   currentRecord=null;
-  showDialog(`<article class="text-article"><p class="eyebrow">ABOUT THE SCROLL</p><h2 id="dialog-title">从场合看一身衣裳</h2><h3>一卷连续的衣冠长卷</h3><p>拖动画面、按左右方向键，或点选下方朝代，即可从先秦一路展卷至清代。朝代切换会沿着长卷缓缓移动。</p><h3>每个时代三套男女衣装</h3><p>每段都可切换礼仪、日常与出行场景；每套插画各有一位女性和一位男性，并分别介绍衣裳层次、发式与随身配饰。</p><h3>图像与原物</h3><p>主图以博物馆藏品、古画、陶俑、雕塑和纺织品为样式参考，统一绘成淡彩古画。点开“史料来源”，可对照原始图像和馆藏介绍。</p><h3>收藏</h3><p>收藏保存在当前浏览器，可随时从“我的藏衣”打开。</p><button class="primary" data-show-sources>查阅资料来源</button></article>`);
+  showDialog(`<article class="text-article"><p class="eyebrow">ABOUT THE SCROLL</p><h2 id="dialog-title">从场合看一身衣裳</h2><h3>一卷连续的衣冠长卷</h3><p>拖动画面、按左右方向键，或点选下方朝代，即可从先秦一路展卷至清代。朝代切换会沿着长卷缓缓移动。</p><h3>礼仪、日常与出行</h3><p>每个时代呈现三种穿着场合；每幅插画由一位女性与一位男性共同呈现，并介绍衣裳层次、发式与随身配饰。</p><h3>图像与原物</h3><p>主图以博物馆藏品、古画、陶俑、雕塑和纺织品为样式参考，统一绘成淡彩古画。点开“史料来源”，可对照原始图像和馆藏介绍。</p><h3>收藏</h3><p>收藏保存在当前浏览器，可随时从“我的藏衣”打开。</p><button class="primary" data-show-sources>查阅资料来源</button></article>`);
 }
 
 let zoomScale=1, fitWidth=0, imageNaturalWidth=0, imageNaturalHeight=0, lastZoomTrigger=null;
@@ -189,10 +189,10 @@ function applyZoom(value,preserveCenter=true) {
   $('#zoom-out').disabled=zoomScale<=1;$('#zoom-in').disabled=zoomScale>=4;
   if(preserveCenter){zoomStage.scrollLeft=x*zoomScale-zoomStage.clientWidth/2;zoomStage.scrollTop=y*zoomScale-zoomStage.clientHeight/2;}else{zoomStage.scrollLeft=0;zoomStage.scrollTop=0;}
 }
-function openZoom(src,label,note) {
+function openZoom(src,label,note,art=false) {
   lastZoomTrigger=document.activeElement;imageNaturalWidth=0;imageNaturalHeight=0;zoomScale=1;
   $('#zoom-title').textContent=label;$('#zoom-caption').textContent=note;
-  zoomImage.alt=label;zoomImage.style.width='auto';zoomImage.style.height='auto';
+  zoomImage.alt=label;zoomImage.classList.toggle('painting-art',art);zoomImage.style.width='auto';zoomImage.style.height='auto';
   zoomImage.onload=()=>{imageNaturalWidth=zoomImage.naturalWidth;imageNaturalHeight=zoomImage.naturalHeight;fitZoomImage();$('#zoom-caption').textContent=note+` · 图像 ${imageNaturalWidth} × ${imageNaturalHeight} 像素；放大不增加原图信息。`;};
   zoomImage.onerror=()=>{$('#zoom-caption').textContent='图像未能加载，请返回资料来源页查看。';};
   if(!zoom.open)zoom.showModal();document.body.style.overflow='hidden';
@@ -238,10 +238,12 @@ document.addEventListener('click',event=>{
   if(d.filter){filter=d.filter;renderCards();return;}
   if(button.id==='clear-filters'){filter='all';$('#search').value='';renderCards();return;}
   if(d.tab)return selectTab(d.tab);
-  if(d.zoomSrc)return openZoom(d.zoomSrc,d.zoomLabel,d.zoomNote||'');
+  if(d.zoomSrc)return openZoom(d.zoomSrc,d.zoomLabel,d.zoomNote||'',d.zoomArt==='true');
   if(d.essay)return showEssay(d.essay);
   if(d.showSources!==undefined)return showSources();
 });
 detail.addEventListener('keydown',event=>{const tab=event.target.closest('[role=tab]');if(!tab)return;const index=tabs.findIndex(([key])=>key===tab.dataset.tab);let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;if(event.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;if(event.key==='Home')next=0;if(event.key==='End')next=tabs.length-1;if(next!==undefined){event.preventDefault();selectTab(tabs[next][0],true);}});
 $('#essay-list').innerHTML=ESSAYS.map(essay=>`<button class="essay" data-essay="${essay.id}"><span>${essay.index}</span><h3>${essay.title}</h3><p>${essay.subtitle}</p><b>↗</b></button>`).join('');
-renderScroll();renderTimeline();renderCards();updateScrollState();
+renderScroll();
+if(matchMedia('(max-width:700px)').matches)viewport.scrollLeft=$('#scene-qin').offsetLeft;
+renderTimeline();renderCards();updateScrollState();

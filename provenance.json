@@ -596,7 +596,7 @@
       "width": 1024,
       "height": 1536,
       "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
-      "activity": "女子执扇侧立，男子持笏前行，两人衣袖形态不同。",
+      "activity": "女子执团扇侧立，男子躬身执笏行礼，姿态一立一俯。",
       "references": [
         {
           "id": "tang",
@@ -730,7 +730,7 @@
       "width": 1024,
       "height": 1536,
       "style": "淡彩工笔古画风，绢纸底色、柔和矿物色与墨线",
-      "activity": "女子回身拉缰，男子弯臂持弓，骏马向前踏步。",
+      "activity": "女子牵住马缰回望，男子立于马侧张弓瞄准，一静一动。",
       "references": [
         {
           "id": "nmcTangRide",
@@ -2103,7 +2103,7 @@
           "id": "court",
           "title": "宫廷家礼衣冠",
           "image": "assets/paintings/sets/tang-court.jpg",
-          "activity": "女子执扇侧立，男子持笏前行，两人衣袖形态不同。"
+          "activity": "女子执团扇侧立，男子躬身执笏行礼，姿态一立一俯。"
         },
         {
           "id": "market",
@@ -2115,7 +2115,7 @@
           "id": "hunt",
           "title": "骑猎胡服行装",
           "image": "assets/paintings/sets/tang-hunt.jpg",
-          "activity": "女子回身拉缰，男子弯臂持弓，骏马向前踏步。"
+          "activity": "女子牵住马缰回望，男子立于马侧张弓瞄准，一静一动。"
         }
       ]
     },
