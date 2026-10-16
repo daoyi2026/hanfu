@@ -215,7 +215,17 @@ const endPan=()=>{pan=null;zoomStage.classList.remove('dragging');};zoomStage.ad
 let drag=null,suppressClickUntil=0,scrollFrame=0;
 viewport.addEventListener('pointerdown',event=>{scrollMotion++;if(event.pointerType!=='mouse'||event.button!==0)return;drag={x:event.clientX,start:viewport.scrollLeft,moved:false};});
 viewport.addEventListener('touchstart',()=>{scrollMotion++;},{passive:true});
-viewport.addEventListener('wheel',()=>{scrollMotion++;},{passive:true});
+viewport.addEventListener('wheel',event=>{
+  if(event.ctrlKey||event.metaKey)return;
+  scrollMotion++;
+  if(event.shiftKey||Math.abs(event.deltaX)>Math.abs(event.deltaY))return;
+  const rawDelta=event.deltaY;
+  const scale=event.deltaMode===1?40:event.deltaMode===2?viewport.clientWidth:1;
+  const max=Math.max(0,viewport.scrollWidth-viewport.clientWidth);
+  const next=Math.max(0,Math.min(max,viewport.scrollLeft+rawDelta*scale));
+  if(next===viewport.scrollLeft)return;
+  event.preventDefault();viewport.scrollLeft=next;
+},{passive:false});
 viewport.addEventListener('pointermove',event=>{if(!drag)return;const dx=event.clientX-drag.x;if(Math.abs(dx)>6){drag.moved=true;viewport.setPointerCapture(event.pointerId);viewport.classList.add('dragging');event.preventDefault();}if(drag.moved)viewport.scrollLeft=drag.start-dx;});
 function endDrag(){if(drag?.moved)suppressClickUntil=Date.now()+250;drag=null;viewport.classList.remove('dragging');}
 viewport.addEventListener('pointerup',endDrag);viewport.addEventListener('pointercancel',endDrag);viewport.addEventListener('lostpointercapture',endDrag);
@@ -227,7 +237,7 @@ $('#scroll-prev').onclick=()=>smoothScrollTo(viewport.scrollLeft-viewport.client
 window.addEventListener('resize',()=>{updateScrollState();if(zoom.open)fitZoomImage();});
 $('#search').addEventListener('input',renderCards);
 $('#show-saved').onclick=()=>{filter='saved';$('#search').value='';renderCards();$('#collection').scrollIntoView({behavior:behavior()});};
-$('#sources').onclick=showSources;$('#about').onclick=showAbout;$('#methodology').onclick=()=>showEssay('evidence');
+$('#about').onclick=showAbout;$('#methodology').onclick=()=>showEssay('evidence');
 document.addEventListener('click',event=>{
   const button=event.target.closest('button');if(!button)return;
   const d=button.dataset;
@@ -243,7 +253,6 @@ document.addEventListener('click',event=>{
   if(d.showSources!==undefined)return showSources();
 });
 detail.addEventListener('keydown',event=>{const tab=event.target.closest('[role=tab]');if(!tab)return;const index=tabs.findIndex(([key])=>key===tab.dataset.tab);let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;if(event.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;if(event.key==='Home')next=0;if(event.key==='End')next=tabs.length-1;if(next!==undefined){event.preventDefault();selectTab(tabs[next][0],true);}});
-$('#essay-list').innerHTML=ESSAYS.map(essay=>`<button class="essay" data-essay="${essay.id}"><span>${essay.index}</span><h3>${essay.title}</h3><p>${essay.subtitle}</p><b>↗</b></button>`).join('');
 renderScroll();
 if(matchMedia('(max-width:700px)').matches)viewport.scrollLeft=$('#scene-qin').offsetLeft;
 renderTimeline();renderCards();updateScrollState();
